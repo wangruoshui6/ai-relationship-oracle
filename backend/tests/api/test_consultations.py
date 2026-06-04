@@ -1,4 +1,4 @@
-def build_auth_headers(client, email: str = "consult@example.com"):
+﻿def build_auth_headers(client, email: str = "consult@example.com"):
     client.post(
         "/api/v1/auth/register",
         json={"email": email, "password": "password123"},
@@ -19,16 +19,16 @@ def test_consultation_creates_conversation_if_missing(client):
         json={
             "conversation_id": None,
             "partner_id": None,
-            "message": "我和她最近总是吵架，我该怎么办？",
+            "message": "I keep fighting with her, what should I do?",
             "analysis_methods": ["bazi", "psychology"],
         },
     )
-
     assert response.status_code == 200
     payload = response.json()
     assert payload["code"] == 0
     assert payload["data"]["conversation_id"]
     assert payload["data"]["answer"]
+    assert len(payload["data"]["answer"]) > 10
     assert payload["data"]["report_generated"] is False
 
 
@@ -37,15 +37,14 @@ def test_consultation_without_partner_id(client):
     response = client.post(
         "/api/v1/consultations",
         headers=headers,
-        json={
-            "message": "我想聊聊这段关系",
-        },
+        json={"message": "I want to talk about this relationship"},
     )
-
     assert response.status_code == 200
     payload = response.json()
     assert payload["data"]["partner_id"] is None
-    assert "我想聊聊这段关系" in payload["data"]["answer"]
+    # With real LLM, answer is natural text, not an echo of the message
+    assert payload["data"]["answer"]
+    assert len(payload["data"]["answer"]) > 10
 
 
 def test_consultation_persists_user_and_assistant_message(client):
@@ -53,13 +52,13 @@ def test_consultation_persists_user_and_assistant_message(client):
     consult_response = client.post(
         "/api/v1/consultations",
         headers=headers,
-        json={
-            "message": "她最近有点冷淡",
-        },
+        json={"message": "She has been cold recently"},
     )
     conversation_id = consult_response.json()["data"]["conversation_id"]
 
-    detail_response = client.get(f"/api/v1/conversations/{conversation_id}", headers=headers)
+    detail_response = client.get(
+        f"/api/v1/conversations/{conversation_id}", headers=headers
+    )
     payload = detail_response.json()
 
     assert detail_response.status_code == 200

@@ -1,4 +1,4 @@
-from sqlalchemy.orm import Session
+﻿from sqlalchemy.orm import Session
 
 from app.core.exceptions import AppException
 from app.db.repositories.partner_repo import PartnerProfileRepo
@@ -30,10 +30,7 @@ class PartnerProfileService:
         return partner
 
     def update(
-        self,
-        user_id: str,
-        partner_id: str,
-        payload: PartnerUpdateRequest,
+        self, user_id: str, partner_id: str, payload: PartnerUpdateRequest,
     ) -> PartnerProfile:
         partner = self.get_or_raise(user_id, partner_id)
         update_data = payload.model_dump(exclude_unset=True)
@@ -50,5 +47,7 @@ class PartnerProfileService:
         computed = self.bazi_compute_service.build_partner_profile_fields(
             birth_date_present=partner.birth_date is not None,
             birth_time_present=partner.birth_time is not None,
+            birth_date=partner.birth_date,
+            birth_time=partner.birth_time,
         )
         partner.bazi_chart = computed["bazi_chart"]

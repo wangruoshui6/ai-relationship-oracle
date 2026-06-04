@@ -1,4 +1,4 @@
-def test_get_my_profile_empty_allowed(client):
+﻿def test_get_my_profile_empty_allowed(client):
     client.post(
         "/api/v1/auth/register",
         json={"email": "profile@example.com", "password": "password123"},
@@ -45,7 +45,11 @@ def test_upsert_my_profile(client):
     assert payload["code"] == 0
     assert payload["data"]["gender"] == "male"
     assert payload["data"]["birth_city"] == "Beijing"
-    assert payload["data"]["bazi_chart"]["status"] == "stub"
+    # With real Bazi computation, chart has day_master instead of status stub
+    chart = payload["data"]["bazi_chart"]
+    assert chart is not None
+    assert "day_master" in chart
+    assert "pillars" in chart
 
 
 def test_upsert_my_profile_updates_existing_record(client):

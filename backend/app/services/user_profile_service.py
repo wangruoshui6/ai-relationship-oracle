@@ -1,4 +1,4 @@
-from sqlalchemy.orm import Session
+﻿from sqlalchemy.orm import Session
 
 from app.db.repositories.profile_repo import UserProfileRepo
 from app.models.user_profile import UserProfile
@@ -23,9 +23,12 @@ class UserProfileService:
         for field_name, value in update_data.items():
             setattr(profile, field_name, value)
 
+        # Compute real Bazi chart with actual birth date/time
         computed = self.bazi_compute_service.build_user_profile_fields(
             birth_date_present=profile.birth_date is not None,
             birth_time_present=profile.birth_time is not None,
+            birth_date=profile.birth_date,
+            birth_time=profile.birth_time,
         )
         profile.bazi_chart = computed["bazi_chart"]
         profile.five_elements = computed["five_elements"]
