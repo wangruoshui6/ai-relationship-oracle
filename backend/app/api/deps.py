@@ -12,7 +12,7 @@ from app.db.session import SessionLocal
 from app.models.user import User, UserStatus
 
 settings = get_settings()
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl=f"{settings.api_v1_prefix}/auth/login")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=f"{settings.api_v1_prefix}/auth/token")
 
 
 def get_db() -> Generator[Session, None, None]:

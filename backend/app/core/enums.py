@@ -15,3 +15,8 @@ class RelationshipTypeEnum(str, Enum):
     SPOUSE = "spouse"
     FRIEND = "friend"
     UNKNOWN = "unknown"
+
+
+class UpdatedByEnum(str, Enum):
+    SYSTEM = "system"
+    USER = "user"

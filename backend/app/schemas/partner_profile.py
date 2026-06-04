@@ -9,7 +9,7 @@ from app.core.enums import GenderEnum, RelationshipTypeEnum
 class PartnerCreateRequest(BaseModel):
     nickname: str = Field(min_length=1, max_length=255)
     gender: GenderEnum | None = None
-    relationship_type: RelationshipTypeEnum | None = None
+    relationship_type: RelationshipTypeEnum | str | None = None
     birth_date: date | None = None
     birth_time: time | None = None
     birth_city: str | None = None
@@ -19,7 +19,7 @@ class PartnerCreateRequest(BaseModel):
 class PartnerUpdateRequest(BaseModel):
     nickname: str | None = Field(default=None, min_length=1, max_length=255)
     gender: GenderEnum | None = None
-    relationship_type: RelationshipTypeEnum | None = None
+    relationship_type: RelationshipTypeEnum | str | None = None
     birth_date: date | None = None
     birth_time: time | None = None
     birth_city: str | None = None

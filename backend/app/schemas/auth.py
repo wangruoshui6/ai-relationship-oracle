@@ -23,3 +23,8 @@ class TokenResponse(BaseModel):
     access_token: str
     token_type: str
     user: UserBrief
+
+
+class AccessTokenResponse(BaseModel):
+    access_token: str
+    token_type: str

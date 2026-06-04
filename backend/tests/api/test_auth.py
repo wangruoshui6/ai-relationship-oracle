@@ -48,6 +48,22 @@ def test_login_success(client):
     assert payload["data"]["token_type"] == "bearer"
 
 
+def test_token_login_success(client):
+    register_user(client)
+    response = client.post(
+        "/api/v1/auth/token",
+        data={
+            "username": "user@example.com",
+            "password": "password123",
+        },
+    )
+
+    assert response.status_code == 200
+    payload = response.json()
+    assert payload["access_token"]
+    assert payload["token_type"] == "bearer"
+
+
 def test_login_invalid_password(client):
     register_user(client)
     response = login_user(client, password="wrong-pass")
