@@ -1,0 +1,46 @@
+from __future__ import annotations
+
+from datetime import date, time
+from typing import Any
+
+from sqlalchemy import Date, ForeignKey, JSON, String, Time
+from sqlalchemy import Enum as SqlEnum
+from sqlalchemy.orm import Mapped, mapped_column
+
+from app.core.enums import GenderEnum, RelationshipTypeEnum
+from app.db.base_class import Base, TimestampMixin
+from app.utils.ids import generate_uuid
+
+
+class PartnerProfile(TimestampMixin, Base):
+    __tablename__ = "partner_profile"
+
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=generate_uuid)
+    user_id: Mapped[str] = mapped_column(
+        String(36),
+        ForeignKey("user.id", ondelete="CASCADE"),
+        nullable=False,
+        index=True,
+    )
+    nickname: Mapped[str] = mapped_column(String(255), nullable=False)
+    gender: Mapped[GenderEnum | None] = mapped_column(
+        SqlEnum(
+            GenderEnum,
+            native_enum=False,
+            values_callable=lambda enum_cls: [item.value for item in enum_cls],
+        ),
+        nullable=True,
+    )
+    relationship_type: Mapped[RelationshipTypeEnum | None] = mapped_column(
+        SqlEnum(
+            RelationshipTypeEnum,
+            native_enum=False,
+            values_callable=lambda enum_cls: [item.value for item in enum_cls],
+        ),
+        nullable=True,
+    )
+    birth_date: Mapped[date | None] = mapped_column(Date, nullable=True)
+    birth_time: Mapped[time | None] = mapped_column(Time, nullable=True)
+    birth_city: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    birth_country: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    bazi_chart: Mapped[dict[str, Any] | None] = mapped_column(JSON, nullable=True)
