@@ -16,6 +16,7 @@ class ConversationRepo:
         partner_id: str | None,
         title: str | None,
         conversation_type: str,
+        commit: bool = True,
     ) -> Conversation:
         conversation = Conversation(
             user_id=user_id,
@@ -24,14 +25,18 @@ class ConversationRepo:
             conversation_type=conversation_type,
         )
         self.db.add(conversation)
-        self.db.commit()
-        self.db.refresh(conversation)
+        self.db.flush()
+        if commit:
+            self.db.commit()
+            self.db.refresh(conversation)
         return conversation
 
-    def save(self, conversation: Conversation) -> Conversation:
+    def save(self, conversation: Conversation, *, commit: bool = True) -> Conversation:
         self.db.add(conversation)
-        self.db.commit()
-        self.db.refresh(conversation)
+        self.db.flush()
+        if commit:
+            self.db.commit()
+            self.db.refresh(conversation)
         return conversation
 
     def get_by_id_and_user_id(self, conversation_id: str, user_id: str) -> Conversation | None:
@@ -56,6 +61,7 @@ class ConversationRepo:
         role: str,
         content: str,
         message_type: str = "text",
+        commit: bool = True,
     ) -> ConversationMessage:
         message = ConversationMessage(
             conversation_id=conversation_id,
@@ -64,8 +70,10 @@ class ConversationRepo:
             message_type=message_type,
         )
         self.db.add(message)
-        self.db.commit()
-        self.db.refresh(message)
+        self.db.flush()
+        if commit:
+            self.db.commit()
+            self.db.refresh(message)
         return message
 
     def list_messages(self, conversation_id: str) -> list[ConversationMessage]:

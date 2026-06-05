@@ -84,6 +84,16 @@ class TestReports:
         r = client.get(f"/api/v1/reports/{rid}", headers=h2)
         assert r.status_code == 404
 
+    def test_generate_report_rejects_foreign_partner_id(self, client):
+        h1 = _auth(client, "owner2@test.com")
+        client.put("/api/v1/profiles/me", headers=h1, json={"birth_date": "1998-05-01"})
+        r = client.post("/api/v1/partners", headers=h1, json={"nickname": "ForeignTarget"})
+        foreign_partner_id = r.json()["data"]["id"]
+
+        h2 = _auth(client, "other2@test.com")
+        r = client.post("/api/v1/reports", headers=h2, json={"partner_id": foreign_partner_id})
+        assert r.status_code == 404
+
     def test_chat_does_not_auto_create_report(self, client):
         h = _auth(client, "rpt5@test.com")
         r = client.post("/api/v1/consultations", headers=h, json={"message": "just chatting"})

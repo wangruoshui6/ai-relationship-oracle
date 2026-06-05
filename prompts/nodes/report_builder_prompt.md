@@ -1,3 +1,5 @@
+## CRITICAL: You MUST output ONLY valid JSON. No markdown, no Chinese explanations outside JSON. If data missing, use empty strings.
+
 # report_builder_prompt
 
 ## 用途

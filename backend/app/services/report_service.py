@@ -23,17 +23,20 @@ class ReportService:
         self.rel_repo = RelationshipRepo(db)
 
     def generate(self, user_id: str, payload: ReportGenerateRequest) -> Report:
+        partner_record = self.partner_repo.get_by_id_and_user_id(payload.partner_id, user_id)
+        if partner_record is None:
+            raise AppException(code=1004, message="partner not found", status_code=404)
+
         # Gather context
         context = {}
         context["user_profile"] = self._serialize_user_profile(user_id)
-        context["partner"] = self._serialize_partner(user_id, payload.partner_id)
+        context["partner"] = self._serialize_partner_record(partner_record)
         context["relationship_profile"] = self.rel_repo.get_relationship_profile(user_id, payload.partner_id)
         context["events"] = self.event_repo.list_by_user_partner(user_id, payload.partner_id)
         context["summary"] = self.rel_repo.get_memory_summary(user_id, payload.partner_id)
 
         # Build report
-        report_json = self.builder.build_report(context)
-        markdown = self.builder.build_markdown(report_json)
+        markdown, meta = self.builder.build_report(context)
 
         partner = context["partner"]
         partner_name = partner.get("nickname", "Partner") if partner else "Unknown"
@@ -45,7 +48,7 @@ class ReportService:
             conversation_id=payload.conversation_id,
             report_type=payload.report_type,
             title=title,
-            content_json=report_json,
+            content_json=meta,
             content_markdown=markdown,
         )
         return self.repo.save(report)
@@ -71,8 +74,7 @@ class ReportService:
             "five_elements": p.five_elements,
         }
 
-    def _serialize_partner(self, user_id: str, partner_id: str) -> dict | None:
-        p = self.partner_repo.get_by_id_and_user_id(partner_id, user_id)
+    def _serialize_partner_record(self, p) -> dict | None:
         if not p:
             return None
         return {

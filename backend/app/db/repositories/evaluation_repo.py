@@ -1,4 +1,4 @@
-﻿"""Evaluation Repository — Week 8."""
+"""Evaluation Repository — Week 8."""
 from sqlalchemy import select, func
 from sqlalchemy.orm import Session
 from app.models.evaluation_case import EvaluationCase

@@ -1,10 +1,9 @@
-﻿"""LLM-driven Tarot Engine — symbolic card interpretation for relationships."""
-import json
-import random
+"""LLM-driven Tarot Engine ? uses PromptCenter for prompt management."""
+import json, random
 from app.tools.base import BaseTool
 from app.tools.result_schema import ToolResult
 from app.services.llm_provider_service import LLMProviderService
-
+from app.services.prompt_center_service import get_prompt_center
 
 MAJOR_ARCANA = [
     ("0", "The Fool", "new beginnings, spontaneity, leap of faith"),
@@ -31,51 +30,33 @@ MAJOR_ARCANA = [
     ("XXI", "The World", "completion, integration, accomplishment"),
 ]
 
-TAROT_SYSTEM_PROMPT = """You are a tarot reader specializing in relationship questions. You draw one card and interpret its meaning in the context of the querent's situation.
-
-Output MUST be valid JSON with these exact keys:
-{
-  "card_name": "The card name (e.g. The Star)",
-  "card_meaning": "1-2 sentence traditional meaning of this card in relationships",
-  "core_signals": ["3-5 symbolic insights from this card relevant to the situation"],
-  "risks": ["2-3 shadow aspects or warnings of this card"],
-  "opportunities": ["2-3 positive potentials this card reveals"],
-  "actions": ["2-3 practical steps inspired by this card's wisdom"]
-}
-
-Rules:
-- Interpret the card in direct relation to the user's question.
-- Include the upright or reversed aspect (I will tell you which it is).
-- Be poetic but grounded. Use the card's traditional symbolism.
-- All array values must be strings.
-"""
-
 
 class TarotEngineService(BaseTool):
     tool_name = "tarot"
 
     def __init__(self) -> None:
+        self.prompt_center = get_prompt_center()
         self.llm = LLMProviderService()
 
     def analyze(self, data: dict) -> ToolResult:
         user_message = data.get("user_message", "")
         card = self._draw_card()
-        reversed_ = random.random() < 0.3  # 30% chance reversed
+        reversed_ = random.random() < 0.3
         orientation = "reversed" if reversed_ else "upright"
 
-        prompt = f"""The querent asks: "{user_message}"
-
-Card drawn: {card[1]} (Arcana {card[0]}) — {orientation}
-Traditional keywords: {card[2]}
-
-Interpret this card in the context of the querent's relationship question. The card is {orientation}."""
+        prompt = (
+            f'The querent asks: "{user_message}"\n\n'
+            f"Card drawn: {card[1]} (Arcana {card[0]}) - {orientation}\n"
+            f"Traditional keywords: {card[2]}\n\n"
+            f"Interpret this card in the context of the querent's relationship question. The card is {orientation}."
+        )
 
         try:
-            raw = self.llm.generate_text(TAROT_SYSTEM_PROMPT, prompt)
+            system_prompt = self.prompt_center.get("tarot")
+            raw = self.llm.generate_text(system_prompt, prompt)
             parsed = self._parse_json(raw)
             return ToolResult(
-                tool=self.tool_name,
-                status="ok",
+                tool=self.tool_name, status="ok",
                 core_signals=[f"card: {parsed.get('card_name', card[1])} ({orientation})"] + parsed.get("core_signals", []),
                 risks=parsed.get("risks", []),
                 opportunities=parsed.get("opportunities", []),
@@ -84,11 +65,9 @@ Interpret this card in the context of the querent's relationship question. The c
             )
         except Exception:
             return ToolResult(
-                tool=self.tool_name,
-                status="degraded",
+                tool=self.tool_name, status="degraded",
                 core_signals=[f"card: {card[1]} ({orientation})"],
-                risks=[],
-                opportunities=[],
+                risks=[], opportunities=[],
                 actions=["Reflect on what this card means to you personally"],
                 confidence_notes=f"Tarot interpretation unavailable. Traditional meaning: {card[2]}.",
             )
@@ -101,7 +80,6 @@ Interpret this card in the context of the querent's relationship question. The c
         raw = raw.strip()
         if raw.startswith("```"):
             raw = raw.split("\n", 1)[-1]
-            if raw.endswith("```"):
-                raw = raw[:-3]
-            raw = raw.strip()
-        return json.loads(raw)
+            if raw.rstrip().endswith("```"):
+                raw = raw.rsplit("```", 1)[0]
+        return json.loads(raw.strip())

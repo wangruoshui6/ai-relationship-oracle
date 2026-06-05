@@ -2,6 +2,7 @@
 import httpx
 
 from app.core.config import get_settings
+from app.core.exceptions import AppException
 
 
 class LLMProviderService:
@@ -37,7 +38,11 @@ class LLMProviderService:
             data = response.json()
             return data["choices"][0]["message"]["content"]
         except Exception as e:
-            return f"[LLM error: {e}]"
+            raise AppException(
+                code=2002,
+                message=f"llm provider error: {e}",
+                status_code=502,
+            ) from e
 
     def generate_text_with_messages(self, messages: list[dict]) -> str:
         if not self.api_key:
@@ -60,7 +65,11 @@ class LLMProviderService:
             response.raise_for_status()
             return response.json()["choices"][0]["message"]["content"]
         except Exception as e:
-            return f"[LLM error: {e}]"
+            raise AppException(
+                code=2002,
+                message=f"llm provider error: {e}",
+                status_code=502,
+            ) from e
 
     @staticmethod
     def _fallback(user_message: str) -> str:

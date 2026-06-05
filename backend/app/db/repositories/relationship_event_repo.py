@@ -21,10 +21,12 @@ class RelationshipEventRepo:
         )
         return list(self.db.scalars(stmt).all())
 
-    def save_event(self, event: RelationshipEvent) -> RelationshipEvent:
+    def save_event(self, event: RelationshipEvent, *, commit: bool = True) -> RelationshipEvent:
         self.db.add(event)
-        self.db.commit()
-        self.db.refresh(event)
+        self.db.flush()
+        if commit:
+            self.db.commit()
+            self.db.refresh(event)
         return event
 
     # --- Candidates ---
@@ -47,8 +49,12 @@ class RelationshipEventRepo:
             )
         )
 
-    def save_candidate(self, candidate: RelationshipEventCandidate) -> RelationshipEventCandidate:
+    def save_candidate(
+        self, candidate: RelationshipEventCandidate, *, commit: bool = True
+    ) -> RelationshipEventCandidate:
         self.db.add(candidate)
-        self.db.commit()
-        self.db.refresh(candidate)
+        self.db.flush()
+        if commit:
+            self.db.commit()
+            self.db.refresh(candidate)
         return candidate

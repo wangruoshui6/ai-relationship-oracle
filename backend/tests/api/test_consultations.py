@@ -65,3 +65,41 @@ def test_consultation_persists_user_and_assistant_message(client):
     assert len(payload["data"]["messages"]) == 2
     assert payload["data"]["messages"][0]["role"] == "user"
     assert payload["data"]["messages"][1]["role"] == "assistant"
+
+
+def test_consultation_rejects_partner_mismatch_for_existing_conversation(client):
+    headers = build_auth_headers(client, email="consult4@example.com")
+    partner_a = client.post(
+        "/api/v1/partners",
+        headers=headers,
+        json={"nickname": "Sarah"},
+    ).json()["data"]["id"]
+    partner_b = client.post(
+        "/api/v1/partners",
+        headers=headers,
+        json={"nickname": "Amy"},
+    ).json()["data"]["id"]
+
+    first = client.post(
+        "/api/v1/consultations",
+        headers=headers,
+        json={
+            "partner_id": partner_a,
+            "message": "First consultation with Sarah",
+        },
+    )
+    conversation_id = first.json()["data"]["conversation_id"]
+
+    second = client.post(
+        "/api/v1/consultations",
+        headers=headers,
+        json={
+            "conversation_id": conversation_id,
+            "partner_id": partner_b,
+            "message": "Now ask about Amy in the same conversation",
+        },
+    )
+
+    assert second.status_code == 409
+    payload = second.json()
+    assert payload["code"] == 1005

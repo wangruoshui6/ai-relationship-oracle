@@ -18,6 +18,7 @@ class RelationshipBootstrapService:
         current_status: str | None,
         current_goal: str | None,
         partner_name: str,
+        commit: bool = True,
     ) -> tuple[RelationshipProfile, MemorySummary, bool]:
         created = False
 
@@ -32,7 +33,10 @@ class RelationshipBootstrapService:
                 summary_snapshot=self._build_snapshot(partner_name, current_status, current_goal),
                 updated_by=UpdatedByEnum.SYSTEM,
             )
-            relationship_profile = self.repo.save_relationship_profile(relationship_profile)
+            relationship_profile = self.repo.save_relationship_profile(
+                relationship_profile,
+                commit=commit,
+            )
             created = True
 
         memory_summary = self.repo.get_memory_summary(user_id, partner_id)
@@ -43,7 +47,7 @@ class RelationshipBootstrapService:
                 summary=self._build_summary(partner_name, current_status, current_goal),
                 summary_version=1,
             )
-            memory_summary = self.repo.save_memory_summary(memory_summary)
+            memory_summary = self.repo.save_memory_summary(memory_summary, commit=commit)
             created = True
 
         return relationship_profile, memory_summary, created
@@ -55,9 +59,9 @@ class RelationshipBootstrapService:
         current_goal: str | None,
     ) -> str:
         return (
-            f"关系对象: {partner_name}; "
-            f"当前状态: {current_status or 'unknown'}; "
-            f"当前目标: {current_goal or 'unknown'}"
+            f"Relationship target: {partner_name}; "
+            f"Current status: {current_status or 'unknown'}; "
+            f"Current goal: {current_goal or 'unknown'}"
         )
 
     @staticmethod
@@ -67,7 +71,7 @@ class RelationshipBootstrapService:
         current_goal: str | None,
     ) -> str:
         return (
-            f"用户当前正在咨询与 {partner_name} 的关系。"
-            f"当前关系状态为 {current_status or 'unknown'}，"
-            f"当前目标为 {current_goal or 'unknown'}。"
+            f"The user is currently consulting about their relationship with {partner_name}. "
+            f"The current relationship status is {current_status or 'unknown'}, "
+            f"and the current goal is {current_goal or 'unknown'}."
         )

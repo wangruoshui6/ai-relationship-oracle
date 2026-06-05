@@ -19,11 +19,13 @@ class RelationshipRepo:
         return self.db.scalar(statement)
 
     def save_relationship_profile(
-        self, relationship_profile: RelationshipProfile
+        self, relationship_profile: RelationshipProfile, *, commit: bool = True
     ) -> RelationshipProfile:
         self.db.add(relationship_profile)
-        self.db.commit()
-        self.db.refresh(relationship_profile)
+        self.db.flush()
+        if commit:
+            self.db.commit()
+            self.db.refresh(relationship_profile)
         return relationship_profile
 
     def get_memory_summary(self, user_id: str, partner_id: str) -> MemorySummary | None:
@@ -33,8 +35,12 @@ class RelationshipRepo:
         )
         return self.db.scalar(statement)
 
-    def save_memory_summary(self, memory_summary: MemorySummary) -> MemorySummary:
+    def save_memory_summary(
+        self, memory_summary: MemorySummary, *, commit: bool = True
+    ) -> MemorySummary:
         self.db.add(memory_summary)
-        self.db.commit()
-        self.db.refresh(memory_summary)
+        self.db.flush()
+        if commit:
+            self.db.commit()
+            self.db.refresh(memory_summary)
         return memory_summary
