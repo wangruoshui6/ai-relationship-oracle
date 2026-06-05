@@ -12,6 +12,13 @@ from app.services.prompt_center_service import get_prompt_center
 class CompatibilityEngineService:
     """Synthesizes multi-dimensional analysis results into unified insights."""
 
+    DEFAULT_COMPATIBILITY_PROMPT = (
+        "You synthesize Bazi, psychology, and tarot results into a grounded "
+        "relationship compatibility summary. Return compact JSON with keys: "
+        "overall_compatibility, cross_analysis, overall_risks, "
+        "overall_opportunities, recommendations."
+    )
+
     def __init__(self) -> None:
         self.llm = LLMProviderService()
         self.prompt_center = get_prompt_center()
@@ -53,9 +60,14 @@ class CompatibilityEngineService:
         context = "\n".join(context_parts)
 
         try:
-            system_prompt = self.prompt_center.get("compatibility")
+            system_prompt = self.prompt_center.get_or_default(
+                "compatibility",
+                self.DEFAULT_COMPATIBILITY_PROMPT,
+            )
             raw = self.llm.generate_text(system_prompt, context)
             parsed = self._parse_json(raw)
+            if not parsed:
+                raise ValueError("empty compatibility json")
 
             return ToolResult(
                 tool="compatibility",
@@ -136,6 +148,8 @@ class CompatibilityEngineService:
 
     @staticmethod
     def _parse_json(raw: str) -> dict:
+        if not raw:
+            return {}
         raw = raw.strip()
         if raw.startswith("```"):
             raw = raw.split("\n", 1)[-1]

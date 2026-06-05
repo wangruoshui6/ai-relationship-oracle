@@ -33,6 +33,10 @@ MAJOR_ARCANA = [
 
 class TarotEngineService(BaseTool):
     tool_name = "tarot"
+    DEFAULT_TAROT_PROMPT = (
+        "You interpret a tarot card for a relationship question. Return JSON with keys: "
+        "card_name, card_meaning, core_signals, risks, opportunities, actions."
+    )
 
     def __init__(self) -> None:
         self.prompt_center = get_prompt_center()
@@ -52,9 +56,14 @@ class TarotEngineService(BaseTool):
         )
 
         try:
-            system_prompt = self.prompt_center.get("tarot")
+            system_prompt = self.prompt_center.get_or_default(
+                "tarot",
+                self.DEFAULT_TAROT_PROMPT,
+            )
             raw = self.llm.generate_text(system_prompt, prompt)
             parsed = self._parse_json(raw)
+            if not parsed:
+                raise ValueError("empty tarot json")
             return ToolResult(
                 tool=self.tool_name, status="ok",
                 core_signals=[f"card: {parsed.get('card_name', card[1])} ({orientation})"] + parsed.get("core_signals", []),
@@ -77,9 +86,14 @@ class TarotEngineService(BaseTool):
 
     @staticmethod
     def _parse_json(raw: str) -> dict:
+        if not raw:
+            return {}
         raw = raw.strip()
         if raw.startswith("```"):
             raw = raw.split("\n", 1)[-1]
             if raw.rstrip().endswith("```"):
                 raw = raw.rsplit("```", 1)[0]
-        return json.loads(raw.strip())
+        try:
+            return json.loads(raw.strip())
+        except json.JSONDecodeError:
+            return {}

@@ -8,6 +8,11 @@ from app.services.prompt_center_service import get_prompt_center
 
 class PsychologyEngineService(BaseTool):
     tool_name = "psychology"
+    DEFAULT_PSYCHOLOGY_PROMPT = (
+        "You analyze relationship psychology. Return JSON with keys: "
+        "core_signals, risks, opportunities, actions, attachment_style, "
+        "communication_pattern."
+    )
 
     def __init__(self) -> None:
         self.prompt_center = get_prompt_center()
@@ -31,9 +36,14 @@ class PsychologyEngineService(BaseTool):
         )
 
         try:
-            system_prompt = self.prompt_center.get("psychology")
+            system_prompt = self.prompt_center.get_or_default(
+                "psychology",
+                self.DEFAULT_PSYCHOLOGY_PROMPT,
+            )
             raw = self.llm.generate_text(system_prompt, context)
             parsed = self._parse_json(raw)
+            if not parsed:
+                raise ValueError("empty psychology json")
             return ToolResult(
                 tool=self.tool_name, status="ok",
                 core_signals=parsed.get("core_signals", []),
@@ -52,9 +62,14 @@ class PsychologyEngineService(BaseTool):
 
     @staticmethod
     def _parse_json(raw: str) -> dict:
+        if not raw:
+            return {}
         raw = raw.strip()
         if raw.startswith("```"):
             raw = raw.split("\n", 1)[-1]
             if raw.rstrip().endswith("```"):
                 raw = raw.rsplit("```", 1)[0]
-        return json.loads(raw.strip())
+        try:
+            return json.loads(raw.strip())
+        except json.JSONDecodeError:
+            return {}

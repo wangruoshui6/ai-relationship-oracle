@@ -101,6 +101,18 @@ class TestWeek5ConsultationWithEvents:
         assert r.json()["data"]["current_status"] == "conflict"
         assert r.json()["data"]["conflict_level"] == "high"
 
+    def test_relationship_memory_rejects_foreign_partner(self, client):
+        owner_headers = _auth(client, "owner-memory@test.com")
+        client.post("/api/v1/consultations", headers=owner_headers, json={
+            "message": "I broke up with Sarah last week",
+        })
+        r = client.get("/api/v1/partners", headers=owner_headers)
+        foreign_partner_id = r.json()["data"][0]["id"]
+
+        other_headers = _auth(client, "other-memory@test.com")
+        r = client.get(f"/api/v1/relationship-memory/{foreign_partner_id}", headers=other_headers)
+        assert r.status_code == 404
+
     def test_event_candidates_confirm_reject(self, client):
         headers = _auth(client, "w5e@test.com")
         client.post("/api/v1/consultations", headers=headers, json={

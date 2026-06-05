@@ -7,6 +7,7 @@ from app.db.repositories.partner_repo import PartnerProfileRepo
 from app.db.repositories.profile_repo import UserProfileRepo
 from app.db.repositories.relationship_event_repo import RelationshipEventRepo
 from app.db.repositories.relationship_repo import RelationshipRepo
+from app.db.repositories.conversation_repo import ConversationRepo
 from app.models.report import Report
 from app.schemas.report import ReportGenerateRequest
 from app.services.report_builder_service import ReportBuilderService
@@ -21,11 +22,23 @@ class ReportService:
         self.profile_repo = UserProfileRepo(db)
         self.event_repo = RelationshipEventRepo(db)
         self.rel_repo = RelationshipRepo(db)
+        self.conversation_repo = ConversationRepo(db)
 
     def generate(self, user_id: str, payload: ReportGenerateRequest) -> Report:
         partner_record = self.partner_repo.get_by_id_and_user_id(payload.partner_id, user_id)
         if partner_record is None:
             raise AppException(code=1004, message="partner not found", status_code=404)
+
+        if payload.conversation_id is not None:
+            conversation = self.conversation_repo.get_by_id_and_user_id(payload.conversation_id, user_id)
+            if conversation is None:
+                raise AppException(code=1004, message="conversation not found", status_code=404)
+            if conversation.partner_id and conversation.partner_id != payload.partner_id:
+                raise AppException(
+                    code=1005,
+                    message="conversation partner mismatch",
+                    status_code=409,
+                )
 
         # Gather context
         context = {}

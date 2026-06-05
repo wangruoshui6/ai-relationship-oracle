@@ -57,6 +57,12 @@ class PromptCenterService:
         self._cache[name] = (content, version)
         return content
 
+    def get_or_default(self, name: str, default: str) -> str:
+        try:
+            return self.get(name)
+        except Exception:
+            return default
+
     def get_version(self, name: str) -> str:
         return self.versions.get(name, "unknown")
 

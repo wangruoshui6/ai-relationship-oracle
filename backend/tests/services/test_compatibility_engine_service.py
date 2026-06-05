@@ -62,3 +62,20 @@ def test_synthesize_does_not_degrade_on_serializable_memory_context():
 
     assert result.tool == "compatibility"
     assert result.status in {"ok", "degraded"}
+
+
+def test_synthesize_degrades_on_invalid_json(monkeypatch):
+    engine = CompatibilityEngineService()
+
+    monkeypatch.setattr(engine.prompt_center, "get_or_default", lambda name, default: default)
+    monkeypatch.setattr(engine.llm, "generate_text", lambda system, user: "not-json")
+
+    result = engine.synthesize(
+        bazi_result=None,
+        psychology_result=None,
+        tarot_result=None,
+        relationship_context=None,
+    )
+
+    assert result.tool == "compatibility"
+    assert result.status == "degraded"

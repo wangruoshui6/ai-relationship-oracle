@@ -94,6 +94,28 @@ class TestReports:
         r = client.post("/api/v1/reports", headers=h2, json={"partner_id": foreign_partner_id})
         assert r.status_code == 404
 
+    def test_generate_report_rejects_mismatched_conversation_partner(self, client):
+        h = _auth(client, "rpt6@test.com")
+        client.put("/api/v1/profiles/me", headers=h, json={"birth_date": "1998-05-01"})
+        r1 = client.post("/api/v1/partners", headers=h, json={"nickname": "Sarah"})
+        partner_a = r1.json()["data"]["id"]
+        r2 = client.post("/api/v1/partners", headers=h, json={"nickname": "Amy"})
+        partner_b = r2.json()["data"]["id"]
+
+        consult = client.post(
+            "/api/v1/consultations",
+            headers=h,
+            json={"partner_id": partner_a, "message": "I broke up with Sarah"},
+        )
+        conversation_id = consult.json()["data"]["conversation_id"]
+
+        r = client.post(
+            "/api/v1/reports",
+            headers=h,
+            json={"partner_id": partner_b, "conversation_id": conversation_id},
+        )
+        assert r.status_code == 409
+
     def test_chat_does_not_auto_create_report(self, client):
         h = _auth(client, "rpt5@test.com")
         r = client.post("/api/v1/consultations", headers=h, json={"message": "just chatting"})
