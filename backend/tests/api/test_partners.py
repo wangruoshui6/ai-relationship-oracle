@@ -37,6 +37,30 @@ def test_create_partner(client):
     assert payload["data"]["relationship_type"] == "ex"
 
 
+def test_create_partner_with_lunar_birth_date(client):
+    headers = build_auth_headers(client, email="partner-lunar@example.com")
+    response = client.post(
+        "/api/v1/partners",
+        headers=headers,
+        json={
+            "nickname": "Lunar Sarah",
+            "gender": "female",
+            "relationship_type": "ex",
+            "birth_date": "2007-01-27",
+            "birth_time": "02:05:00",
+            "birth_city": "Shijiazhuang",
+            "birth_country": "China",
+            "calendar_type": "lunar",
+        },
+    )
+
+    assert response.status_code == 200
+    payload = response.json()["data"]
+    assert payload["calendar_type"] == "lunar"
+    assert payload["lunar_birth_date"] == "2007-01-27"
+    assert payload["birth_date"] != "2007-01-27"
+
+
 def test_list_partners(client):
     headers = build_auth_headers(client)
     create_partner(client, headers, nickname="Sarah")

@@ -3,7 +3,7 @@ from typing import Any
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from app.core.enums import GenderEnum, RelationshipTypeEnum
+from app.core.enums import CalendarTypeEnum, GenderEnum, RelationshipTypeEnum
 
 
 class PartnerCreateRequest(BaseModel):
@@ -14,6 +14,8 @@ class PartnerCreateRequest(BaseModel):
     birth_time: time | None = None
     birth_city: str | None = None
     birth_country: str | None = None
+    calendar_type: CalendarTypeEnum = CalendarTypeEnum.SOLAR
+    is_leap_month: bool = False
 
 
 class PartnerUpdateRequest(BaseModel):
@@ -24,6 +26,8 @@ class PartnerUpdateRequest(BaseModel):
     birth_time: time | None = None
     birth_city: str | None = None
     birth_country: str | None = None
+    calendar_type: CalendarTypeEnum | None = None
+    is_leap_month: bool | None = None
 
 
 class PartnerListItem(BaseModel):
@@ -33,6 +37,7 @@ class PartnerListItem(BaseModel):
     nickname: str
     gender: GenderEnum | None
     relationship_type: RelationshipTypeEnum | None
+    calendar_type: CalendarTypeEnum | None
     updated_at: datetime
 
 
@@ -44,7 +49,9 @@ class PartnerDetailResponse(BaseModel):
     nickname: str
     gender: GenderEnum | None
     relationship_type: RelationshipTypeEnum | None
+    calendar_type: CalendarTypeEnum | None
     birth_date: date | None
+    lunar_birth_date: date | None
     birth_time: time | None
     birth_city: str | None
     birth_country: str | None

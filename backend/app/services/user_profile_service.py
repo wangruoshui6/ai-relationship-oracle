@@ -4,12 +4,14 @@ from app.db.repositories.profile_repo import UserProfileRepo
 from app.models.user_profile import UserProfile
 from app.schemas.user_profile import UserProfileUpsertRequest
 from app.services.bazi_profile_compute_service import BaziProfileComputeService
+from app.services.date_normalization_service import DateNormalizationService
 
 
 class UserProfileService:
     def __init__(self, db: Session) -> None:
         self.repo = UserProfileRepo(db)
         self.bazi_compute_service = BaziProfileComputeService()
+        self.date_normalization_service = DateNormalizationService()
 
     def get_by_user_id(self, user_id: str) -> UserProfile | None:
         return self.repo.get_by_user_id(user_id)
@@ -22,6 +24,14 @@ class UserProfileService:
         update_data = payload.model_dump(exclude_unset=True)
         for field_name, value in update_data.items():
             setattr(profile, field_name, value)
+
+        normalized_birth_date, lunar_birth_date = self.date_normalization_service.normalize_birth_date(
+            birth_date=profile.birth_date,
+            calendar_type=profile.calendar_type,
+            is_leap_month=payload.is_leap_month,
+        )
+        profile.birth_date = normalized_birth_date
+        profile.lunar_birth_date = lunar_birth_date
 
         # Compute real Bazi chart with actual birth date/time
         computed = self.bazi_compute_service.build_user_profile_fields(

@@ -67,6 +67,20 @@ def test_consultation_persists_user_and_assistant_message(client):
     assert payload["data"]["messages"][1]["role"] == "assistant"
 
 
+def test_consultation_stream_returns_sse_events(client):
+    headers = build_auth_headers(client, email="consult-stream@example.com")
+    response = client.post(
+        "/api/v1/consultations/stream",
+        headers=headers,
+        json={"message": "I miss her and want to know if we can reconcile."},
+    )
+
+    assert response.status_code == 200
+    assert "text/event-stream" in response.headers["content-type"]
+    assert "event: status" in response.text
+    assert "event: done" in response.text
+
+
 def test_consultation_rejects_partner_mismatch_for_existing_conversation(client):
     headers = build_auth_headers(client, email="consult4@example.com")
     partner_a = client.post(

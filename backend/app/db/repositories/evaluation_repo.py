@@ -52,6 +52,20 @@ class EvaluationRepo:
             EvaluationCase(case_name="neutral_entity_check", case_type="entity_extraction",
                 input_payload={"message": "I feel sad about my breakup"},
                 expected_rules={"entity_name": None, "status": None}),
+            EvaluationCase(case_name="workflow_auto_partner_bootstrap", case_type="workflow",
+                input_payload={
+                    "message": "I broke up with Sarah three months ago, will she come back?",
+                    "analysis_methods": ["bazi", "psychology"]
+                },
+                expected_rules={
+                    "intent": "relationship_analysis",
+                    "entity_name": "Sarah",
+                    "status": "breakup",
+                    "expects_partner_created": True,
+                    "expects_memory_updated": True,
+                    "requires_answer": True,
+                    "no_absolute_prediction": True,
+                }),
         ]
         for c in cases:
             self.db.add(c)

@@ -2,156 +2,167 @@
 
 一个围绕情感关系分析的 AI 顾问系统。
 
-用户输入自己和对象的基础信息后即可直接提问，系统会自动识别对象、建立关系记忆，并结合八字、心理学、塔罗、RAG 和长期关系上下文，输出结构化关系洞察与行动建议。
+用户可以维护命主与对象资料，并基于八字、心理学、塔罗等分析方式发起咨询，系统会结合关系上下文给出建议与洞察。
 
 ---
 
-## 项目定位
+## 项目简介
 
 这个项目不是通用聊天机器人，也不是单纯算命工具。
 
-它的核心定位是：
+它的定位是：
 
-> 一个以情感关系为核心，以基础档案为输入，以 AI 关系记忆为中枢，以多分析维度为辅助，以行动建议为输出的 AI 顾问系统。
+> 一个以情感关系为核心，以人物档案为输入，以多分析维度为辅助，以 AI 咨询为输出的关系顾问系统。
 
-当前已经明确的核心能力包括：
+当前仓库包含：
 
-- 首次咨询自动建档
-- 按 Partner 维度维护长期关系记忆
-- 支持八字 / 心理学 / 塔罗多维分析
-- 聊天与正式报告分离
-- 通过 Harness + Ragas 进行离线评测
+- `backend/`：后端服务（FastAPI + SQLAlchemy + Alembic）
+- `frontend/`：前端应用（Vue 3 + Vite + Pinia）
+- `prompts/`：Prompt 资产
+- `docs/`：项目文档
 
 ---
 
-## 当前目录结构
+## 目录结构
 
 ```text
 agent算命/
-├── docs/                  # 项目文档（00-15）
+├── backend/               # 后端工程
+├── frontend/              # 前端工程
 ├── prompts/               # Prompt 资产
-│   ├── global/
-│   ├── nodes/
-│   └── scenes/
-├── backend/               # 后端工程（待继续落地）
-├── frontend/              # 前端工程（待继续落地）
-├── evaluation/            # 评测体系（待继续落地）
-├── scripts/               # 辅助脚本
-├── assets/                # 静态资源
-├── output/                # 导出与运行产物
+├── docs/                  # 项目文档
 ├── README.md
 └── .gitignore
 ```
 
 ---
 
-## 已完成内容
+## 开发环境
 
-### 1. 项目文档基线
+建议环境：
 
-`docs/` 目录下已完成 00–15 文档，覆盖：
+- Python 3.11+
+- Node.js 18+
+- npm 9+
 
-- 产品边界
-- 系统架构
-- 数据模型
-- Agent 工作流
-- Prompt 设计规范
-- API 设计
-- 页面说明
-- 测试案例
-- 执行计划
+后端默认使用：
 
-### 2. 第一批 Prompt 已落地
+- FastAPI
+- SQLAlchemy
+- Alembic
+- SQLite（默认 `backend/dev.db`）
 
-当前已创建的核心 Prompt：
+前端默认使用：
 
-- `prompts/global/system_base_prompt.md`
-- `prompts/nodes/intent_router_prompt.md`
-- `prompts/nodes/entity_extractor_prompt.md`
-- `prompts/scenes/relationship_analysis_prompt.md`
-
-这些 Prompt 是当前系统的第一版 Prompt 资产基线。
+- Vue 3
+- Vite
+- Pinia
+- Axios
 
 ---
 
-## 当前架构摘要
+## 后端运行方式
 
-### 线上主链路
+进入后端目录：
 
-```text
-用户输入
-  ↓
-Intent Router
-  ↓
-Entity Extractor
-  ↓
-Profile Loader
-  ↓
-Memory Loader
-  ↓
-Tool Router
-  ├─ Bazi Engine
-  ├─ Psychology Engine
-  └─ Tarot Engine
-  ↓
-Knowledge RAG
-  ↓
-Compatibility Engine
-  ↓
-Prompt Builder
-  ↓
-LLM Generator
-  ↓
-Persist Result
+```powershell
+cd "d:\code.agent\agent算命\backend"
 ```
 
-### 数据分层
+如果你使用项目虚拟环境，推荐这样启动：
+
+```powershell
+.\.venv\Scripts\python.exe -m uvicorn app.main:app --reload
+```
+
+默认后端地址：
 
 ```text
-Profile（事实档案）
-+
-Memory（AI 关系记忆）
-+
-Output（正式输出）
+http://127.0.0.1:8000
+```
+
+### 数据库迁移
+
+如果后端模型或表结构有更新，请先执行迁移：
+
+```powershell
+cd "d:\code.agent\agent算命\backend"
+.\.venv\Scripts\python.exe -m alembic.config upgrade head
+```
+
+如果你已经激活虚拟环境，也可以直接执行：
+
+```powershell
+alembic upgrade head
 ```
 
 ---
 
-## 下一步计划
+## 前端运行方式
 
-当前推荐的推进顺序：
+进入前端目录：
 
-1. 补齐剩余核心 Prompt
-2. 搭建后端工程骨架
-3. 建立数据库模型与 API schema
-4. 实现 LangGraph state 与工作流节点
-5. 接入评测框架
+```powershell
+cd "d:\code.agent\agent算命\frontend"
+```
 
-近期最优先的 Prompt 包括：
+安装依赖：
 
-- `event_detector_prompt`
-- `memory_update_prompt`
-- `general_guidance_prompt`
-- `report_builder_prompt`
+```powershell
+npm install
+```
+
+启动开发环境：
+
+```powershell
+npm run dev
+```
+
+Vite 默认端口配置为：
+
+```text
+5173
+```
+
+如果 `5173` 已被占用，Vite 可能自动切换到 `5174` 或其他可用端口。
 
 ---
 
-## 开发原则
+## 当前功能概览
 
-- 文档先行，代码落地
-- Prompt 视为核心资产
-- 关系事实优先于玄学推断
-- 报告与聊天分离
-- 所有 Prompt / Router / Memory / RAG 改动尽量进入评测回归
+当前版本已包含基础可运行能力：
+
+- 用户登录 / 注册
+- 命主资料维护
+- 对象资料维护
+- 单页咨询工作台
+- 八字 / 心理学 / 塔罗分析方式选择
+- 流式咨询返回
+
+---
+
+## 开发说明
+
+### 前后端启动顺序
+
+推荐顺序：
+
+1. 启动后端
+2. 执行数据库迁移（如有结构变更）
+3. 启动前端
+
+### 常见问题
+
+#### 1. 前端端口不是 5173
+
+这通常表示已经有另一个 Vite 实例占用了 `5173`，新实例自动切换到了其他端口。
+
+#### 2. 新增字段不生效
+
+如果前后端代码都更新了，但数据库里没有对应字段，请先执行 Alembic migration。
 
 ---
 
 ## 备注
 
-当前仓库正处于：
-
-```text
-架构已收敛，准备进入实现阶段
-```
-
-后续将从文档驱动逐步过渡到工程实现驱动。
+当前仓库已经进入可运行开发阶段，README 主要用于帮助开发者快速理解项目与完成本地启动。

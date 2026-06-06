@@ -83,3 +83,35 @@ def test_upsert_my_profile_updates_existing_record(client):
     assert response.status_code == 200
     payload = response.json()
     assert payload["data"]["birth_city"] == "Shanghai"
+
+
+def test_upsert_my_profile_accepts_lunar_birth_date(client):
+    client.post(
+        "/api/v1/auth/register",
+        json={"email": "profile-lunar@example.com", "password": "password123"},
+    )
+    login_response = client.post(
+        "/api/v1/auth/login",
+        json={"email": "profile-lunar@example.com", "password": "password123"},
+    )
+    token = login_response.json()["data"]["access_token"]
+    headers = {"Authorization": f"Bearer {token}"}
+
+    response = client.put(
+        "/api/v1/profiles/me",
+        headers=headers,
+        json={
+            "gender": "female",
+            "birth_date": "2007-01-27",
+            "birth_time": "02:05:00",
+            "birth_city": "Shijiazhuang",
+            "birth_country": "China",
+            "calendar_type": "lunar",
+        },
+    )
+
+    assert response.status_code == 200
+    payload = response.json()["data"]
+    assert payload["calendar_type"] == "lunar"
+    assert payload["lunar_birth_date"] == "2007-01-27"
+    assert payload["birth_date"] != "2007-01-27"

@@ -7,7 +7,7 @@ from sqlalchemy import Date, ForeignKey, JSON, String, Time
 from sqlalchemy import Enum as SqlEnum
 from sqlalchemy.orm import Mapped, mapped_column
 
-from app.core.enums import GenderEnum, RelationshipTypeEnum
+from app.core.enums import CalendarTypeEnum, GenderEnum, RelationshipTypeEnum
 from app.db.base_class import Base, TimestampMixin
 from app.utils.ids import generate_uuid
 
@@ -39,7 +39,16 @@ class PartnerProfile(TimestampMixin, Base):
         ),
         nullable=True,
     )
+    calendar_type: Mapped[CalendarTypeEnum | None] = mapped_column(
+        SqlEnum(
+            CalendarTypeEnum,
+            native_enum=False,
+            values_callable=lambda enum_cls: [item.value for item in enum_cls],
+        ),
+        nullable=True,
+    )
     birth_date: Mapped[date | None] = mapped_column(Date, nullable=True)
+    lunar_birth_date: Mapped[date | None] = mapped_column(Date, nullable=True)
     birth_time: Mapped[time | None] = mapped_column(Time, nullable=True)
     birth_city: Mapped[str | None] = mapped_column(String(255), nullable=True)
     birth_country: Mapped[str | None] = mapped_column(String(255), nullable=True)

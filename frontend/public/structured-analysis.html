@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>资料分析页原型</title>
+  <link rel="stylesheet" href="./structured-analysis.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">AI Relationship Oracle</p>
+        <h1>资料分析页</h1>
+        <p class="hero-text">
+          先填写双方资料，再由后端自动完成农历/公历归一化、八字排盘和正式咨询。
+        </p>
+      </div>
+      <div class="hero-card">
+        <p class="hero-card-label">接口目标</p>
+        <code>POST /api/v1/structured-consultations</code>
+        <p class="hero-card-text">
+          一次请求完成资料录入、八字计算、存档与分析。
+        </p>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="panel intake-panel">
+        <div class="panel-header">
+          <div>
+            <p class="panel-kicker">Structured Intake</p>
+            <h2>资料录入</h2>
+          </div>
+          <div class="mode-switch" role="tablist" aria-label="分析模式">
+            <button class="mode-pill active" type="button" data-mode="new">新建对象分析</button>
+            <button class="mode-pill" type="button" data-mode="existing">已有对象继续分析</button>
+          </div>
+        </div>
+
+        <form id="structured-form" class="intake-form">
+          <section class="card-block">
+            <div class="block-head">
+              <h3>我的资料</h3>
+              <p>用于排本命盘与后续关系分析。</p>
+            </div>
+            <div class="grid two-col">
+              <label>
+                <span>性别</span>
+                <select name="user_gender">
+                  <option value="male">男</option>
+                  <option value="female">女</option>
+                  <option value="other">其他</option>
+                  <option value="unknown">未知</option>
+                </select>
+              </label>
+              <div class="calendar-group">
+                <span>历法</span>
+                <div class="segmented">
+                  <label><input type="radio" name="user_calendar_type" value="solar" checked /> 公历</label>
+                  <label><input type="radio" name="user_calendar_type" value="lunar" /> 农历</label>
+                </div>
+              </div>
+              <label>
+                <span>出生日期</span>
+                <input type="date" name="user_birth_date" />
+              </label>
+              <label class="user-leap hidden">
+                <span>闰月</span>
+                <select name="user_is_leap_month">
+                  <option value="false">否</option>
+                  <option value="true">是</option>
+                </select>
+              </label>
+              <label>
+                <span>出生时间</span>
+                <input type="time" step="60" name="user_birth_time" />
+              </label>
+              <label>
+                <span>出生城市</span>
+                <input type="text" name="user_birth_city" placeholder="例如：唐山" />
+              </label>
+              <label>
+                <span>出生国家</span>
+                <input type="text" name="user_birth_country" value="China" />
+              </label>
+            </div>
+          </section>
+
+          <section class="card-block">
+            <div class="block-head">
+              <h3>对方资料</h3>
+              <p>支持新建对象或补充已有对象档案。</p>
+            </div>
+
+            <div id="existing-partner-box" class="grid one-col hidden">
+              <label>
+                <span>已有对象 ID</span>
+                <input type="text" name="existing_partner_id" placeholder="已有对象模式下填写 partner_id" />
+              </label>
+            </div>
+
+            <div class="grid two-col">
+              <label>
+                <span>昵称</span>
+                <input type="text" name="partner_nickname" placeholder="例如：她 / Sarah" />
+              </label>
+              <label>
+                <span>关系类型</span>
+                <select name="partner_relationship_type">
+                  <option value="unknown">未知</option>
+                  <option value="ex">前任</option>
+                  <option value="current">现任</option>
+                  <option value="crush">暧昧对象</option>
+                  <option value="spouse">配偶</option>
+                  <option value="friend">朋友</option>
+                </select>
+              </label>
+              <label>
+                <span>性别</span>
+                <select name="partner_gender">
+                  <option value="female">女</option>
+                  <option value="male">男</option>
+                  <option value="other">其他</option>
+                  <option value="unknown">未知</option>
+                </select>
+              </label>
+              <div class="calendar-group">
+                <span>历法</span>
+                <div class="segmented">
+                  <label><input type="radio" name="partner_calendar_type" value="solar" checked /> 公历</label>
+                  <label><input type="radio" name="partner_calendar_type" value="lunar" /> 农历</label>
+                </div>
+              </div>
+              <label>
+                <span>出生日期</span>
+                <input type="date" name="partner_birth_date" />
+              </label>
+              <label class="partner-leap hidden">
+                <span>闰月</span>
+                <select name="partner_is_leap_month">
+                  <option value="false">否</option>
+                  <option value="true">是</option>
+                </select>
+              </label>
+              <label>
+                <span>出生时间</span>
+                <input type="time" step="60" name="partner_birth_time" />
+              </label>
+              <label>
+                <span>出生城市</span>
+                <input type="text" name="partner_birth_city" placeholder="例如：石家庄" />
+              </label>
+              <label>
+                <span>出生国家</span>
+                <input type="text" name="partner_birth_country" value="China" />
+              </label>
+            </div>
+          </section>
+
+          <section class="card-block">
+            <div class="block-head">
+              <h3>分析设置</h3>
+              <p>决定这次咨询走哪些维度。</p>
+            </div>
+            <div class="settings-grid">
+              <div class="checkbox-stack">
+                <span>分析维度</span>
+                <label><input type="checkbox" name="analysis_methods" value="bazi" checked /> 八字分析</label>
+                <label><input type="checkbox" name="analysis_methods" value="psychology" checked /> 心理学分析</label>
+                <label><input type="checkbox" name="analysis_methods" value="tarot" /> 塔罗分析</label>
+              </div>
+              <label class="question-field">
+                <span>提问内容</span>
+                <textarea
+                  name="question"
+                  rows="5"
+                  placeholder="例如：我们现在分开了，还能复合吗？"
+                ></textarea>
+              </label>
+            </div>
+          </section>
+
+          <section class="submit-row">
+            <button id="preview-btn" type="button" class="ghost-btn">生成请求预览</button>
+            <button id="submit-btn" type="submit" class="primary-btn">提交结构化分析</button>
+          </section>
+        </form>
+      </section>
+
+      <aside class="panel inspector-panel">
+        <div class="panel-header compact">
+          <div>
+            <p class="panel-kicker">Payload Preview</p>
+            <h2>请求预览</h2>
+          </div>
+          <span class="badge">Prototype</span>
+        </div>
+
+        <div class="meta-card">
+          <label>
+            <span>API Base</span>
+            <input id="api-base" type="text" value="http://127.0.0.1:8000/api/v1" />
+          </label>
+          <label>
+            <span>Bearer Token</span>
+            <input id="api-token" type="text" placeholder="可选，联调时填入 token" />
+          </label>
+        </div>
+
+        <div class="output-block">
+          <div class="output-head">
+            <span>structured-consultations</span>
+            <button id="copy-btn" type="button">复制 JSON</button>
+          </div>
+          <pre id="payload-preview" class="code-box"></pre>
+        </div>
+
+        <div class="output-block">
+          <div class="output-head">
+            <span>接口返回</span>
+            <button id="clear-response-btn" type="button">清空</button>
+          </div>
+          <pre id="response-preview" class="code-box muted">点击“提交结构化分析”后显示返回结果</pre>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="./structured-analysis.js"></script>
+</body>
+</html>

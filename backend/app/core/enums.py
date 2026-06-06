@@ -20,3 +20,8 @@ class RelationshipTypeEnum(str, Enum):
 class UpdatedByEnum(str, Enum):
     SYSTEM = "system"
     USER = "user"
+
+
+class CalendarTypeEnum(str, Enum):
+    SOLAR = "solar"
+    LUNAR = "lunar"
