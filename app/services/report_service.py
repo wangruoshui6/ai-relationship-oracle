@@ -1,0 +1,98 @@
+﻿"""Report Service — Week 7. Generates and queries relationship reports."""
+from sqlalchemy.orm import Session
+
+from app.core.exceptions import AppException
+from app.db.repositories.report_repo import ReportRepo
+from app.db.repositories.partner_repo import PartnerProfileRepo
+from app.db.repositories.profile_repo import UserProfileRepo
+from app.db.repositories.relationship_event_repo import RelationshipEventRepo
+from app.db.repositories.relationship_repo import RelationshipRepo
+from app.db.repositories.conversation_repo import ConversationRepo
+from app.models.report import Report
+from app.schemas.report import ReportGenerateRequest
+from app.services.report_builder_service import ReportBuilderService
+
+
+class ReportService:
+    def __init__(self, db: Session) -> None:
+        self.db = db
+        self.repo = ReportRepo(db)
+        self.builder = ReportBuilderService()
+        self.partner_repo = PartnerProfileRepo(db)
+        self.profile_repo = UserProfileRepo(db)
+        self.event_repo = RelationshipEventRepo(db)
+        self.rel_repo = RelationshipRepo(db)
+        self.conversation_repo = ConversationRepo(db)
+
+    def generate(self, user_id: str, payload: ReportGenerateRequest) -> Report:
+        partner_record = self.partner_repo.get_by_id_and_user_id(payload.partner_id, user_id)
+        if partner_record is None:
+            raise AppException(code=1004, message="partner not found", status_code=404)
+
+        if payload.conversation_id is not None:
+            conversation = self.conversation_repo.get_by_id_and_user_id(payload.conversation_id, user_id)
+            if conversation is None:
+                raise AppException(code=1004, message="conversation not found", status_code=404)
+            if conversation.partner_id and conversation.partner_id != payload.partner_id:
+                raise AppException(
+                    code=1005,
+                    message="conversation partner mismatch",
+                    status_code=409,
+                )
+
+        # Gather context
+        context = {}
+        context["user_profile"] = self._serialize_user_profile(user_id)
+        context["partner"] = self._serialize_partner_record(partner_record)
+        context["relationship_profile"] = self.rel_repo.get_relationship_profile(user_id, payload.partner_id)
+        context["events"] = self.event_repo.list_by_user_partner(user_id, payload.partner_id)
+        context["summary"] = self.rel_repo.get_memory_summary(user_id, payload.partner_id)
+
+        # Build report
+        markdown, meta = self.builder.build_report(context)
+
+        partner = context["partner"]
+        partner_name = partner.get("nickname", "Partner") if partner else "Unknown"
+        title = f"Relationship Analysis: {partner_name} - {payload.report_type}"
+
+        report = Report(
+            user_id=user_id,
+            partner_id=payload.partner_id,
+            conversation_id=payload.conversation_id,
+            report_type=payload.report_type,
+            title=title,
+            content_json=meta,
+            content_markdown=markdown,
+        )
+        return self.repo.save(report)
+
+    def list_reports(self, user_id: str, partner_id: str | None = None) -> list[Report]:
+        return self.repo.list_by_user(user_id, partner_id)
+
+    def get_report(self, user_id: str, report_id: str) -> Report:
+        report = self.repo.get_by_id_and_user(report_id, user_id)
+        if report is None:
+            raise AppException(code=1004, message="report not found", status_code=404)
+        return report
+
+    def _serialize_user_profile(self, user_id: str) -> dict | None:
+        p = self.profile_repo.get_by_user_id(user_id)
+        if not p:
+            return None
+        return {
+            "gender": p.gender.value if p.gender else None,
+            "birth_date": str(p.birth_date) if p.birth_date else None,
+            "birth_time": str(p.birth_time) if p.birth_time else None,
+            "bazi_chart": p.bazi_chart,
+            "five_elements": p.five_elements,
+        }
+
+    def _serialize_partner_record(self, p) -> dict | None:
+        if not p:
+            return None
+        return {
+            "nickname": p.nickname,
+            "gender": p.gender.value if p.gender else None,
+            "birth_date": str(p.birth_date) if p.birth_date else None,
+            "bazi_chart": p.bazi_chart,
+        }
