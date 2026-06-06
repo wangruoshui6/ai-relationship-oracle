@@ -7,6 +7,7 @@ from app.core.enums import CalendarTypeEnum, GenderEnum
 
 
 class UserProfileUpsertRequest(BaseModel):
+    name: str | None = None
     gender: GenderEnum | None = None
     birth_date: date | None = None
     birth_time: time | None = None
@@ -21,6 +22,7 @@ class UserProfileResponse(BaseModel):
 
     id: str
     user_id: str
+    name: str | None
     gender: GenderEnum | None
     calendar_type: CalendarTypeEnum | None
     birth_date: date | None

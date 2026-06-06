@@ -23,6 +23,7 @@ class UserProfile(TimestampMixin, Base):
         nullable=False,
         index=True,
     )
+    name: Mapped[str | None] = mapped_column(String(255), nullable=True)
     gender: Mapped[GenderEnum | None] = mapped_column(
         SqlEnum(
             GenderEnum,
