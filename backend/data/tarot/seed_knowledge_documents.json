@@ -1,0 +1,4190 @@
+[
+  {
+    "domain": "tarot",
+    "doc_key": "the-fool__upright",
+    "title_zh": "愚者 · 正位",
+    "title_en": "The Fool · Upright",
+    "content": "【愚者 · 正位】情场新开始，不顾一切地投入。（The Fool · Upright: a fresh start in love, leaping before looking） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 0,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-fool__reversed",
+    "title_zh": "愚者 · 逆位",
+    "title_en": "The Fool · Reversed",
+    "content": "【愚者 · 逆位】对感情不负责任，害怕重新开始。（The Fool · Reversed: recklessness with someone's heart, fear of starting over） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 0,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-magician__upright",
+    "title_zh": "魔术师 · 正位",
+    "title_en": "The Magician · Upright",
+    "content": "【魔术师 · 正位】心想事成，主动出击。（The Magician · Upright: manifesting the connection you want, real initiative） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 1,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-magician__reversed",
+    "title_zh": "魔术师 · 逆位",
+    "title_en": "The Magician · Reversed",
+    "content": "【魔术师 · 逆位】感情中的操控，空有魅力没有实质。（The Magician · Reversed: manipulation, charm without substance） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 1,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-high-priestess__upright",
+    "title_zh": "女祭司 · 正位",
+    "title_en": "The High Priestess · Upright",
+    "content": "【女祭司 · 正位】相信你对他的直觉，隐藏的感情。（The High Priestess · Upright: trust your intuition about them, hidden feelings） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 2,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-high-priestess__reversed",
+    "title_zh": "女祭司 · 逆位",
+    "title_en": "The High Priestess · Reversed",
+    "content": "【女祭司 · 逆位】忽视你的直觉，他对你有所隐瞒。（The High Priestess · Reversed: ignoring your gut, secrets kept from you） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 2,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-empress__upright",
+    "title_zh": "女皇 · 正位",
+    "title_en": "The Empress · Upright",
+    "content": "【女皇 · 正位】滋养的爱，感性，被宠爱。（The Empress · Upright: nurturing love, sensuality, being adored） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 3,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-empress__reversed",
+    "title_zh": "女皇 · 逆位",
+    "title_en": "The Empress · Reversed",
+    "content": "【女皇 · 逆位】窒息的爱，过度依赖，在爱情中忽略自己。（The Empress · Reversed: smothering, neediness, self-neglect in love） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 3,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-emperor__upright",
+    "title_zh": "皇帝 · 正位",
+    "title_en": "The Emperor · Upright",
+    "content": "【皇帝 · 正位】稳定，保护，一个靠谱的伴侣。（The Emperor · Upright: stability, protection, a partner who shows up） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 4,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-emperor__reversed",
+    "title_zh": "皇帝 · 逆位",
+    "title_en": "The Emperor · Reversed",
+    "content": "【皇帝 · 逆位】控制欲强，固执，情感上的隔阂。（The Emperor · Reversed: control issues, rigidity, emotional walls） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 4,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-hierophant__upright",
+    "title_zh": "教皇 · 正位",
+    "title_en": "The Hierophant · Upright",
+    "content": "【教皇 · 正位】承诺，传统，有结构的感情。（The Hierophant · Upright: commitment, tradition, a relationship with structure） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 5,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-hierophant__reversed",
+    "title_zh": "教皇 · 逆位",
+    "title_en": "The Hierophant · Reversed",
+    "content": "【教皇 · 逆位】打破常规，价值观不匹配。（The Hierophant · Reversed: breaking conventions, mismatched values） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 5,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-lovers__upright",
+    "title_zh": "恋人 · 正位",
+    "title_en": "The Lovers · Upright",
+    "content": "【恋人 · 正位】深层结合，发自内心的选择。（The Lovers · Upright: deep union, a real choice of the heart） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 6,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-lovers__reversed",
+    "title_zh": "恋人 · 逆位",
+    "title_en": "The Lovers · Reversed",
+    "content": "【恋人 · 逆位】不和谐，价值观错位，逃避选择。（The Lovers · Reversed: disharmony, misaligned values, avoidance of choice） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 6,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-chariot__upright",
+    "title_zh": "战车 · 正位",
+    "title_en": "The Chariot · Upright",
+    "content": "【战车 · 正位】坚定追求，掌控局面。（The Chariot · Upright: determined pursuit, taking control of the situation） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 7,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-chariot__reversed",
+    "title_zh": "战车 · 逆位",
+    "title_en": "The Chariot · Reversed",
+    "content": "【战车 · 逆位】用力过猛，感情方向不一致。（The Chariot · Reversed: pushing too hard, a connection pulling in two directions） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 7,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "strength__upright",
+    "title_zh": "力量 · 正位",
+    "title_en": "Strength · Upright",
+    "content": "【力量 · 正位】有耐心的勇气，温柔的力量，驯服戏剧性。（Strength · Upright: patient courage, gentle power, taming the drama） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 8,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "strength__reversed",
+    "title_zh": "力量 · 逆位",
+    "title_en": "Strength · Reversed",
+    "content": "【力量 · 逆位】不安全感，嫉妒，强求不该强求的柔软。（Strength · Reversed: insecurity, jealousy, forcing what needs softness） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 8,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-hermit__upright",
+    "title_zh": "隐者 · 正位",
+    "title_en": "The Hermit · Upright",
+    "content": "【隐者 · 正位】在爱之前先审视内心，需要空间。（The Hermit · Upright: soul-searching before loving, needing space） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 9,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-hermit__reversed",
+    "title_zh": "隐者 · 逆位",
+    "title_en": "The Hermit · Reversed",
+    "content": "【隐者 · 逆位】孤立，将寂寞伪装成独立。（The Hermit · Reversed: isolation, loneliness disguised as independence） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 9,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "wheel-of-fortune__upright",
+    "title_zh": "命运之轮 · 正位",
+    "title_en": "Wheel of Fortune · Upright",
+    "content": "【命运之轮 · 正位】命运转折，命中注定的相遇，周期变化。（Wheel of Fortune · Upright: fate turning, a destined meeting, cycles shifting） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 10,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "wheel-of-fortune__reversed",
+    "title_zh": "命运之轮 · 逆位",
+    "title_en": "Wheel of Fortune · Reversed",
+    "content": "【命运之轮 · 逆位】时机不对，重蹈感情覆辙。（Wheel of Fortune · Reversed: bad timing, repeating the same romantic cycle） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 10,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "justice__upright",
+    "title_zh": "正义 · 正位",
+    "title_en": "Justice · Upright",
+    "content": "【正义 · 正位】因果报应，诚实，得到应得的公平。（Justice · Upright: karmic balance, honesty, getting what is fair） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 11,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "justice__reversed",
+    "title_zh": "正义 · 逆位",
+    "title_en": "Justice · Reversed",
+    "content": "【正义 · 逆位】不公平，不诚实，逃避责任。（Justice · Reversed: unfairness, dishonesty, accountability avoided） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 11,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-hanged-man__upright",
+    "title_zh": "倒吊人 · 正位",
+    "title_en": "The Hanged Man · Upright",
+    "content": "【倒吊人 · 正位】暂停，从新角度看待他。（The Hanged Man · Upright: a pause, seeing them from a new angle） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 12,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-hanged-man__reversed",
+    "title_zh": "倒吊人 · 逆位",
+    "title_en": "The Hanged Man · Reversed",
+    "content": "【倒吊人 · 逆位】停滞不前，没有回报的牺牲。（The Hanged Man · Reversed: stalling, sacrifice with no return） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 12,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "death__upright",
+    "title_zh": "死神 · 正位",
+    "title_en": "Death · Upright",
+    "content": "【死神 · 正位】一段结束，为真爱腾出空间。（Death · Upright: an ending that makes room for real love） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 13,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "death__reversed",
+    "title_zh": "死神 · 逆位",
+    "title_en": "Death · Reversed",
+    "content": "【死神 · 逆位】执着于已逝去的，抗拒改变。（Death · Reversed: clinging to what is over, resisting change） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 13,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "temperance__upright",
+    "title_zh": "节制 · 正位",
+    "title_en": "Temperance · Upright",
+    "content": "【节制 · 正位】耐心，治愈，两种生活平衡融合。（Temperance · Upright: patience, healing, a balanced blend of two lives） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 14,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "temperance__reversed",
+    "title_zh": "节制 · 逆位",
+    "title_en": "Temperance · Reversed",
+    "content": "【节制 · 逆位】过度，失衡，操之过急。（Temperance · Reversed: excess, imbalance, rushing the process） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 14,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-devil__upright",
+    "title_zh": "恶魔 · 正位",
+    "title_en": "The Devil · Upright",
+    "content": "【恶魔 · 正位】痴迷，强烈的化学反应，无法摆脱的束缚。（The Devil · Upright: obsession, intense chemistry, attachment that binds） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 15,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-devil__reversed",
+    "title_zh": "恶魔 · 逆位",
+    "title_en": "The Devil · Reversed",
+    "content": "【恶魔 · 逆位】摆脱有毒关系，夺回主动权。（The Devil · Reversed: breaking free of a toxic tie, reclaiming power） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 15,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-tower__upright",
+    "title_zh": "高塔 · 正位",
+    "title_en": "The Tower · Upright",
+    "content": "【高塔 · 正位】突如其来的真相，幻象崩塌。（The Tower · Upright: sudden truth collapsing the illusion） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 16,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-tower__reversed",
+    "title_zh": "高塔 · 逆位",
+    "title_en": "The Tower · Reversed",
+    "content": "【高塔 · 逆位】延迟必要的崩塌，害怕剧变。（The Tower · Reversed: delaying a needed collapse, fear of upheaval） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 16,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-star__upright",
+    "title_zh": "星星 · 正位",
+    "title_en": "The Star · Upright",
+    "content": "【星星 · 正位】心碎后的希望，治愈，重燃对爱的信念。（The Star · Upright: hope after heartbreak, healing, renewed faith in love） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 17,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-star__reversed",
+    "title_zh": "星星 · 逆位",
+    "title_en": "The Star · Reversed",
+    "content": "【星星 · 逆位】沮丧，对爱的信念减弱。（The Star · Reversed: discouragement, faith in love running low） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 17,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-moon__upright",
+    "title_zh": "月亮 · 正位",
+    "title_en": "The Moon · Upright",
+    "content": "【月亮 · 正位】困惑，信号混乱，事情并非表面那样。（The Moon · Upright: confusion, mixed signals, things not as they seem） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 18,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-moon__reversed",
+    "title_zh": "月亮 · 逆位",
+    "title_en": "The Moon · Reversed",
+    "content": "【月亮 · 逆位】迷雾散去，焦虑释放，真相浮现。（The Moon · Reversed: fog lifting, anxiety releasing, truth surfacing） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 18,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-sun__upright",
+    "title_zh": "太阳 · 正位",
+    "title_en": "The Sun · Upright",
+    "content": "【太阳 · 正位】快乐的爱，温暖，被完全看见。（The Sun · Upright: joyful love, warmth, being seen fully） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 19,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-sun__reversed",
+    "title_zh": "太阳 · 逆位",
+    "title_en": "The Sun · Reversed",
+    "content": "【太阳 · 逆位】被乌云遮蔽的幸福，强颜欢笑。（The Sun · Reversed: clouded happiness, forced positivity） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 19,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "judgement__upright",
+    "title_zh": "审判 · 正位",
+    "title_en": "Judgement · Upright",
+    "content": "【审判 · 正位】当头棒喝，重生，诚实的自我审视。（Judgement · Upright: a wake-up call, rebirth, an honest reckoning） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 20,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "judgement__reversed",
+    "title_zh": "审判 · 逆位",
+    "title_en": "Judgement · Reversed",
+    "content": "【审判 · 逆位】自我评判，忽视改变的呼唤。（Judgement · Reversed: self-judgment, ignoring the call to change） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 20,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-world__upright",
+    "title_zh": "世界 · 正位",
+    "title_en": "The World · Upright",
+    "content": "【世界 · 正位】圆满，一段完整的爱，完整性。（The World · Upright: completion, a full-circle love, wholeness） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 21,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "the-world__reversed",
+    "title_zh": "世界 · 逆位",
+    "title_en": "The World · Reversed",
+    "content": "【世界 · 逆位】功亏一篑，留下未解决的问题。（The World · Reversed: almost there, loose ends left untied） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "major",
+      "number": 21,
+      "suit": null,
+      "element": null,
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ace-of-cups__upright",
+    "title_zh": "圣杯王牌 · 正位",
+    "title_en": "Ace of Cups · Upright",
+    "content": "【圣杯王牌 · 正位】爱满溢，敞开心扉。（Ace of Cups · Upright: new love overflowing, an open heart） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 1,
+      "suit": "cups",
+      "element": "water",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ace-of-cups__reversed",
+    "title_zh": "圣杯王牌 · 逆位",
+    "title_en": "Ace of Cups · Reversed",
+    "content": "【圣杯王牌 · 逆位】感情受阻，爱意不外露。（Ace of Cups · Reversed: blocked feelings, love not poured out） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 1,
+      "suit": "cups",
+      "element": "water",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "two-of-cups__upright",
+    "title_zh": "圣杯二 · 正位",
+    "title_en": "Two of Cups · Upright",
+    "content": "【圣杯二 · 正位】互相吸引，真正的伴侣关系形成。（Two of Cups · Upright: mutual attraction, a true partnership forming） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 2,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "cancer",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "two-of-cups__reversed",
+    "title_zh": "圣杯二 · 逆位",
+    "title_en": "Two of Cups · Reversed",
+    "content": "【圣杯二 · 逆位】失衡，关系失去互惠性。（Two of Cups · Reversed: imbalance, a bond losing its reciprocity） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 2,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "cancer",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "three-of-cups__upright",
+    "title_zh": "圣杯三 · 正位",
+    "title_en": "Three of Cups · Upright",
+    "content": "【圣杯三 · 正位】庆祝，友情升华为爱情。（Three of Cups · Upright: celebration, friendship warming into more） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 3,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "cancer",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "three-of-cups__reversed",
+    "title_zh": "圣杯三 · 逆位",
+    "title_en": "Three of Cups · Reversed",
+    "content": "【圣杯三 · 逆位】第三方干涉，流言蜚语，过度放纵。（Three of Cups · Reversed: third-party interference, gossip, overindulgence） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 3,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "cancer",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "four-of-cups__upright",
+    "title_zh": "圣杯四 · 正位",
+    "title_en": "Four of Cups · Upright",
+    "content": "【圣杯四 · 正位】冷漠，错失身边的爱意。（Four of Cups · Upright: apathy, missing the love being offered） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 4,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "cancer",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "four-of-cups__reversed",
+    "title_zh": "圣杯四 · 逆位",
+    "title_en": "Four of Cups · Reversed",
+    "content": "【圣杯四 · 逆位】觉醒，抓住眼前的机会。（Four of Cups · Reversed: waking up to an opportunity in front of you） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 4,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "cancer",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "five-of-cups__upright",
+    "title_zh": "圣杯五 · 正位",
+    "title_en": "Five of Cups · Upright",
+    "content": "【圣杯五 · 正位】为失去而悲伤，只关注失去的。（Five of Cups · Upright: grief over what was lost, focusing on the spilled） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 5,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "scorpio",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "five-of-cups__reversed",
+    "title_zh": "圣杯五 · 逆位",
+    "title_en": "Five of Cups · Reversed",
+    "content": "【圣杯五 · 逆位】接受，转向所拥有的。（Five of Cups · Reversed: acceptance, turning toward what remains） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 5,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "scorpio",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "six-of-cups__upright",
+    "title_zh": "圣杯六 · 正位",
+    "title_en": "Six of Cups · Upright",
+    "content": "【圣杯六 · 正位】怀旧，前任重现，纯真的爱意。（Six of Cups · Upright: nostalgia, an ex resurfacing, innocent affection） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 6,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "scorpio",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "six-of-cups__reversed",
+    "title_zh": "圣杯六 · 逆位",
+    "title_en": "Six of Cups · Reversed",
+    "content": "【圣杯六 · 逆位】困在过去，美化过去。（Six of Cups · Reversed: stuck in the past, idealizing what was） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 6,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "scorpio",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "seven-of-cups__upright",
+    "title_zh": "圣杯七 · 正位",
+    "title_en": "Seven of Cups · Upright",
+    "content": "【圣杯七 · 正位】选择过多，沉溺幻想而非现实。（Seven of Cups · Upright: too many options, fantasy over reality） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 7,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "scorpio",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "seven-of-cups__reversed",
+    "title_zh": "圣杯七 · 逆位",
+    "title_en": "Seven of Cups · Reversed",
+    "content": "【圣杯七 · 逆位】思路清晰，睁大眼睛做出选择。（Seven of Cups · Reversed: clarity arriving, choosing with open eyes） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 7,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "scorpio",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "eight-of-cups__upright",
+    "title_zh": "圣杯八 · 正位",
+    "title_en": "Eight of Cups · Upright",
+    "content": "【圣杯八 · 正位】离开不再让你满足的。（Eight of Cups · Upright: walking away from what no longer fills you） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 8,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "pisces",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "eight-of-cups__reversed",
+    "title_zh": "圣杯八 · 逆位",
+    "title_en": "Eight of Cups · Reversed",
+    "content": "【圣杯八 · 逆位】害怕离开，再试一次。（Eight of Cups · Reversed: fear of leaving, one more try） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 8,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "pisces",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "nine-of-cups__upright",
+    "title_zh": "圣杯九 · 正位",
+    "title_en": "Nine of Cups · Upright",
+    "content": "【圣杯九 · 正位】情感上的满足，愿望成真。（Nine of Cups · Upright: emotional satisfaction, a wish granted） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 9,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "pisces",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "nine-of-cups__reversed",
+    "title_zh": "圣杯九 · 逆位",
+    "title_en": "Nine of Cups · Reversed",
+    "content": "【圣杯九 · 逆位】自鸣得意，空洞的满足感。（Nine of Cups · Reversed: smugness, satisfaction that rings hollow） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 9,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "pisces",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ten-of-cups__upright",
+    "title_zh": "圣杯十 · 正位",
+    "title_en": "Ten of Cups · Upright",
+    "content": "【圣杯十 · 正位】持久的幸福，爱情的完整画面。（Ten of Cups · Upright: lasting happiness, the whole picture of love） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 10,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "pisces",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ten-of-cups__reversed",
+    "title_zh": "圣杯十 · 逆位",
+    "title_en": "Ten of Cups · Reversed",
+    "content": "【圣杯十 · 逆位】华丽表象下的裂痕。（Ten of Cups · Reversed: a picture-perfect facade with cracks） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 10,
+      "suit": "cups",
+      "element": "water",
+      "decan": {
+        "sign": "pisces",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "page-of-cups__upright",
+    "title_zh": "圣杯侍从 · 正位",
+    "title_en": "Page of Cups · Upright",
+    "content": "【圣杯侍从 · 正位】甜蜜的信息，俏皮的新情愫。（Page of Cups · Upright: a sweet message, playful new feelings） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 11,
+      "suit": "cups",
+      "element": "water",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "page-of-cups__reversed",
+    "title_zh": "圣杯侍从 · 逆位",
+    "title_en": "Page of Cups · Reversed",
+    "content": "【圣杯侍从 · 逆位】情感不成熟，信号混乱。（Page of Cups · Reversed: emotional immaturity, mixed signals） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 11,
+      "suit": "cups",
+      "element": "water",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "knight-of-cups__upright",
+    "title_zh": "圣杯骑士 · 正位",
+    "title_en": "Knight of Cups · Upright",
+    "content": "【圣杯骑士 · 正位】浪漫的追求，爱的表白。（Knight of Cups · Upright: a romantic pursuit, feelings declared） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 12,
+      "suit": "cups",
+      "element": "water",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "knight-of-cups__reversed",
+    "title_zh": "圣杯骑士 · 逆位",
+    "title_en": "Knight of Cups · Reversed",
+    "content": "【圣杯骑士 · 逆位】一个花言巧语，光说不练的家伙。（Knight of Cups · Reversed: a charmer who promises more than he brings） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 12,
+      "suit": "cups",
+      "element": "water",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "queen-of-cups__upright",
+    "title_zh": "圣杯皇后 · 正位",
+    "title_en": "Queen of Cups · Upright",
+    "content": "【圣杯皇后 · 正位】深度共情，情感上的安全感，被呵护。（Queen of Cups · Upright: deep empathy, emotional safety, being held） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 13,
+      "suit": "cups",
+      "element": "water",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "queen-of-cups__reversed",
+    "title_zh": "圣杯皇后 · 逆位",
+    "title_en": "Queen of Cups · Reversed",
+    "content": "【圣杯皇后 · 逆位】情感超负荷，付出到枯竭。（Queen of Cups · Reversed: emotional overwhelm, giving until empty） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 13,
+      "suit": "cups",
+      "element": "water",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "king-of-cups__upright",
+    "title_zh": "圣杯国王 · 正位",
+    "title_en": "King of Cups · Upright",
+    "content": "【圣杯国王 · 正位】情感成熟，平静而忠诚的爱。（King of Cups · Upright: emotional maturity, calm devoted love） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 14,
+      "suit": "cups",
+      "element": "water",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "king-of-cups__reversed",
+    "title_zh": "圣杯国王 · 逆位",
+    "title_en": "King of Cups · Reversed",
+    "content": "【圣杯国王 · 逆位】喜怒无常，感情被控制或压抑。（King of Cups · Reversed: moodiness, feelings controlled or suppressed） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 14,
+      "suit": "cups",
+      "element": "water",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ace-of-wands__upright",
+    "title_zh": "权杖王牌 · 正位",
+    "title_en": "Ace of Wands · Upright",
+    "content": "【权杖王牌 · 正位】激情的火花，磁性般的新吸引力。（Ace of Wands · Upright: a spark of passion, magnetic new attraction） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 1,
+      "suit": "wands",
+      "element": "fire",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ace-of-wands__reversed",
+    "title_zh": "权杖王牌 · 逆位",
+    "title_en": "Ace of Wands · Reversed",
+    "content": "【权杖王牌 · 逆位】热情熄灭，欲望延迟。（Ace of Wands · Reversed: a flame that fizzles, delayed desire） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 1,
+      "suit": "wands",
+      "element": "fire",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "two-of-wands__upright",
+    "title_zh": "权杖二 · 正位",
+    "title_en": "Two of Wands · Upright",
+    "content": "【权杖二 · 正位】共同规划未来，大胆选择。（Two of Wands · Upright: planning a future together, choosing boldly） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 2,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "aries",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "two-of-wands__reversed",
+    "title_zh": "权杖二 · 逆位",
+    "title_en": "Two of Wands · Reversed",
+    "content": "【权杖二 · 逆位】害怕走出舒适区。（Two of Wands · Reversed: fear of leaving the comfort zone） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 2,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "aries",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "three-of-wands__upright",
+    "title_zh": "权杖三 · 正位",
+    "title_en": "Three of Wands · Upright",
+    "content": "【权杖三 · 正位】动能，关系拓展视野。（Three of Wands · Upright: momentum, a connection expanding its horizon） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 3,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "aries",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "three-of-wands__reversed",
+    "title_zh": "权杖三 · 逆位",
+    "title_en": "Three of Wands · Reversed",
+    "content": "【权杖三 · 逆位】延迟，等待别人的行动。（Three of Wands · Reversed: delays, waiting on someone to move） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 3,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "aries",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "four-of-wands__upright",
+    "title_zh": "权杖四 · 正位",
+    "title_en": "Four of Wands · Upright",
+    "content": "【权杖四 · 正位】庆祝，回归，稳固幸福的里程碑。（Four of Wands · Upright: celebration, homecoming, a stable happy milestone） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 4,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "aries",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "four-of-wands__reversed",
+    "title_zh": "权杖四 · 逆位",
+    "title_en": "Four of Wands · Reversed",
+    "content": "【权杖四 · 逆位】派对之下摇摇欲坠的基础。（Four of Wands · Reversed: shaky foundations under the party） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 4,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "aries",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "five-of-wands__upright",
+    "title_zh": "权杖五 · 正位",
+    "title_en": "Five of Wands · Upright",
+    "content": "【权杖五 · 正位】摩擦，竞争，激烈的争吵。（Five of Wands · Upright: friction, rivalry, passionate sparring） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 5,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "leo",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "five-of-wands__reversed",
+    "title_zh": "权杖五 · 逆位",
+    "title_en": "Five of Wands · Reversed",
+    "content": "【权杖五 · 逆位】紧张缓解，冲突避免。（Five of Wands · Reversed: tension released, conflict avoided） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 5,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "leo",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "six-of-wands__upright",
+    "title_zh": "权杖六 · 正位",
+    "title_en": "Six of Wands · Upright",
+    "content": "【权杖六 · 正位】公开认可，一份值得骄傲的爱。（Six of Wands · Upright: public recognition, a love you can be proud of） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 6,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "leo",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "six-of-wands__reversed",
+    "title_zh": "权杖六 · 逆位",
+    "title_en": "Six of Wands · Reversed",
+    "content": "【权杖六 · 逆位】自负作祟，掌声背后的私下怀疑。（Six of Wands · Reversed: ego in the way, private doubts behind applause） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 6,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "leo",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "seven-of-wands__upright",
+    "title_zh": "权杖七 · 正位",
+    "title_en": "Seven of Wands · Upright",
+    "content": "【权杖七 · 正位】捍卫你的关系或你的原则。（Seven of Wands · Upright: defending your relationship or your standards） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 7,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "leo",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "seven-of-wands__reversed",
+    "title_zh": "权杖七 · 逆位",
+    "title_en": "Seven of Wands · Reversed",
+    "content": "【权杖七 · 逆位】独自奋斗的疲惫。（Seven of Wands · Reversed: exhaustion from fighting for it alone） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 7,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "leo",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "eight-of-wands__upright",
+    "title_zh": "权杖八 · 正位",
+    "title_en": "Eight of Wands · Upright",
+    "content": "【权杖八 · 正位】迅速进展，信息飞扬，事情加速。（Eight of Wands · Upright: fast movement, messages flying, things accelerating） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 8,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "sagittarius",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "eight-of-wands__reversed",
+    "title_zh": "权杖八 · 逆位",
+    "title_en": "Eight of Wands · Reversed",
+    "content": "【权杖八 · 逆位】延迟，错过时机，沟通停滞。（Eight of Wands · Reversed: delays, missed timing, stalled communication） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 8,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "sagittarius",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "nine-of-wands__upright",
+    "title_zh": "权杖九 · 正位",
+    "title_en": "Nine of Wands · Upright",
+    "content": "【权杖九 · 正位】有所保留但依然坚守，即将挺过难关。（Nine of Wands · Upright: guarded but still standing, almost through） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 9,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "sagittarius",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "nine-of-wands__reversed",
+    "title_zh": "权杖九 · 逆位",
+    "title_en": "Nine of Wands · Reversed",
+    "content": "【权杖九 · 逆位】高墙之下，什么都进不去。（Nine of Wands · Reversed: walls so high nothing gets in） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 9,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "sagittarius",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ten-of-wands__upright",
+    "title_zh": "权杖十 · 正位",
+    "title_en": "Ten of Wands · Upright",
+    "content": "【权杖十 · 正位】独自承担感情的重担。（Ten of Wands · Upright: carrying the relationship's weight alone） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 10,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "sagittarius",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ten-of-wands__reversed",
+    "title_zh": "权杖十 · 逆位",
+    "title_en": "Ten of Wands · Reversed",
+    "content": "【权杖十 · 逆位】终于放下重担。（Ten of Wands · Reversed: setting the burden down at last） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 10,
+      "suit": "wands",
+      "element": "fire",
+      "decan": {
+        "sign": "sagittarius",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "page-of-wands__upright",
+    "title_zh": "权杖侍从 · 正位",
+    "title_en": "Page of Wands · Upright",
+    "content": "【权杖侍从 · 正位】调情，激动人心的信息，自由奔放的能量。（Page of Wands · Upright: flirtation, an exciting message, free spirit energy） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 11,
+      "suit": "wands",
+      "element": "fire",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "page-of-wands__reversed",
+    "title_zh": "权杖侍从 · 逆位",
+    "title_en": "Page of Wands · Reversed",
+    "content": "【权杖侍从 · 逆位】注意力分散，只有火花没有后续。（Page of Wands · Reversed: scattered attention, all spark no follow-through） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 11,
+      "suit": "wands",
+      "element": "fire",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "knight-of-wands__upright",
+    "title_zh": "权杖骑士 · 正位",
+    "title_en": "Knight of Wands · Upright",
+    "content": "【权杖骑士 · 正位】热情的追求，冒险，不可抗拒的魅力。（Knight of Wands · Upright: passionate pursuit, adventure, irresistible energy） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 12,
+      "suit": "wands",
+      "element": "fire",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "knight-of-wands__reversed",
+    "title_zh": "权杖骑士 · 逆位",
+    "title_en": "Knight of Wands · Reversed",
+    "content": "【权杖骑士 · 逆位】忽冷忽热，承诺过敏症。（Knight of Wands · Reversed: hot then cold, commitment allergy） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 12,
+      "suit": "wands",
+      "element": "fire",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "queen-of-wands__upright",
+    "title_zh": "权杖皇后 · 正位",
+    "title_en": "Queen of Wands · Upright",
+    "content": "【权杖皇后 · 正位】自信，热情，因你的热情而被渴望。（Queen of Wands · Upright: confidence, warmth, being desired for your fire） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 13,
+      "suit": "wands",
+      "element": "fire",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "queen-of-wands__reversed",
+    "title_zh": "权杖皇后 · 逆位",
+    "title_en": "Queen of Wands · Reversed",
+    "content": "【权杖皇后 · 逆位】嫉妒，为了别人而削弱自己。（Queen of Wands · Reversed: jealousy, dimming yourself for someone） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 13,
+      "suit": "wands",
+      "element": "fire",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "king-of-wands__upright",
+    "title_zh": "权杖国王 · 正位",
+    "title_en": "King of Wands · Upright",
+    "content": "【权杖国王 · 正位】爱情中大胆的领导力，有远见的伴侣。（King of Wands · Upright: bold leadership in love, a visionary partner） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 14,
+      "suit": "wands",
+      "element": "fire",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "king-of-wands__reversed",
+    "title_zh": "权杖国王 · 逆位",
+    "title_en": "King of Wands · Reversed",
+    "content": "【权杖国王 · 逆位】专横的炽热，计划不如承诺大。（King of Wands · Reversed: domineering heat, promises bigger than plans） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 14,
+      "suit": "wands",
+      "element": "fire",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ace-of-swords__upright",
+    "title_zh": "宝剑王牌 · 正位",
+    "title_en": "Ace of Swords · Upright",
+    "content": "【宝剑王牌 · 正位】真相大白，一语道破。（Ace of Swords · Upright: clarity cutting through, the truth spoken） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 1,
+      "suit": "swords",
+      "element": "air",
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ace-of-swords__reversed",
+    "title_zh": "宝剑王牌 · 逆位",
+    "title_en": "Ace of Swords · Reversed",
+    "content": "【宝剑王牌 · 逆位】困惑，回避或扭曲真相。（Ace of Swords · Reversed: confusion, a truth avoided or twisted） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 1,
+      "suit": "swords",
+      "element": "air",
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "two-of-swords__upright",
+    "title_zh": "宝剑二 · 正位",
+    "title_en": "Two of Swords · Upright",
+    "content": "【宝剑二 · 正位】僵局，拒绝看清或选择。（Two of Swords · Upright: a stalemate, refusing to see or choose） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 2,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "libra",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "two-of-swords__reversed",
+    "title_zh": "宝剑二 · 逆位",
+    "title_en": "Two of Swords · Reversed",
+    "content": "【宝剑二 · 逆位】蒙眼布滑落，被迫做出决定。（Two of Swords · Reversed: the blindfold slipping, a decision forced） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 2,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "libra",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "three-of-swords__upright",
+    "title_zh": "宝剑三 · 正位",
+    "title_en": "Three of Swords · Upright",
+    "content": "【宝剑三 · 正位】心碎，背叛，必要但痛苦的真相。（Three of Swords · Upright: heartbreak, betrayal, the necessary painful truth） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 3,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "libra",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "three-of-swords__reversed",
+    "title_zh": "宝剑三 · 逆位",
+    "title_en": "Three of Swords · Reversed",
+    "content": "【宝剑三 · 逆位】疗愈开始，宽恕在望。（Three of Swords · Reversed: healing beginning, forgiveness on the table） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 3,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "libra",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "four-of-swords__upright",
+    "title_zh": "宝剑四 · 正位",
+    "title_en": "Four of Swords · Upright",
+    "content": "【宝剑四 · 正位】休息和距离，必要的暂停。（Four of Swords · Upright: rest and distance, a needed pause） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 4,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "libra",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "four-of-swords__reversed",
+    "title_zh": "宝剑四 · 逆位",
+    "title_en": "Four of Swords · Reversed",
+    "content": "【宝剑四 · 逆位】不安，在痊愈前就回归。（Four of Swords · Reversed: restlessness, returning before healed） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 4,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "libra",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "five-of-swords__upright",
+    "title_zh": "宝剑五 · 正位",
+    "title_en": "Five of Swords · Upright",
+    "content": "【宝剑五 · 正位】空洞的胜利，赢了争吵却输了人。（Five of Swords · Upright: a hollow victory, winning the fight losing the person） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 5,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "aquarius",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "five-of-swords__reversed",
+    "title_zh": "宝剑五 · 逆位",
+    "title_en": "Five of Swords · Reversed",
+    "content": "【宝剑五 · 逆位】弥补过失，结束冷战。（Five of Swords · Reversed: making amends, ending the cold war） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 5,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "aquarius",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "six-of-swords__upright",
+    "title_zh": "宝剑六 · 正位",
+    "title_en": "Six of Swords · Upright",
+    "content": "【宝剑六 · 正位】继续前进，前方水域平静。（Six of Swords · Upright: moving on, calmer waters ahead） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 6,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "aquarius",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "six-of-swords__reversed",
+    "title_zh": "宝剑六 · 逆位",
+    "title_en": "Six of Swords · Reversed",
+    "content": "【宝剑六 · 逆位】把包袱带入下一章。（Six of Swords · Reversed: dragging baggage into the next chapter） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 6,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "aquarius",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "seven-of-swords__upright",
+    "title_zh": "宝剑七 · 正位",
+    "title_en": "Seven of Swords · Upright",
+    "content": "【宝剑七 · 正位】欺骗，有人不公平竞争。（Seven of Swords · Upright: deception, someone not playing fair） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 7,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "aquarius",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "seven-of-swords__reversed",
+    "title_zh": "宝剑七 · 逆位",
+    "title_en": "Seven of Swords · Reversed",
+    "content": "【宝剑七 · 逆位】坦白，秘密浮出水面。（Seven of Swords · Reversed: a confession, secrets coming home） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 7,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "aquarius",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "eight-of-swords__upright",
+    "title_zh": "宝剑八 · 正位",
+    "title_en": "Eight of Swords · Upright",
+    "content": "【宝剑八 · 正位】感觉被思想困住，而非事实。（Eight of Swords · Upright: feeling trapped by thoughts, not facts） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 8,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "gemini",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "eight-of-swords__reversed",
+    "title_zh": "宝剑八 · 逆位",
+    "title_en": "Eight of Swords · Reversed",
+    "content": "【宝剑八 · 逆位】从思想牢笼中解放自己。（Eight of Swords · Reversed: freeing yourself from a mental cage） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 8,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "gemini",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "nine-of-swords__upright",
+    "title_zh": "宝剑九 · 正位",
+    "title_en": "Nine of Swords · Upright",
+    "content": "【宝剑九 · 正位】凌晨三点为他们感到焦虑。（Nine of Swords · Upright: anxiety spiraling at 3am over them） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 9,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "gemini",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "nine-of-swords__reversed",
+    "title_zh": "宝剑九 · 逆位",
+    "title_en": "Nine of Swords · Reversed",
+    "content": "【宝剑九 · 逆位】直面恐惧，恐惧缩小。（Nine of Swords · Reversed: the fear examined and shrinking） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 9,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "gemini",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ten-of-swords__upright",
+    "title_zh": "宝剑十 · 正位",
+    "title_en": "Ten of Swords · Upright",
+    "content": "【宝剑十 · 正位】处境跌入谷底，彻底结束。（Ten of Swords · Upright: rock bottom of the situation, an ending complete） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 10,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "gemini",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ten-of-swords__reversed",
+    "title_zh": "宝剑十 · 逆位",
+    "title_en": "Ten of Swords · Reversed",
+    "content": "【宝剑十 · 逆位】幸存下来，最坏的已经过去。（Ten of Swords · Reversed: survival, the worst already behind you） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 10,
+      "suit": "swords",
+      "element": "air",
+      "decan": {
+        "sign": "gemini",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "page-of-swords__upright",
+    "title_zh": "宝剑侍从 · 正位",
+    "title_en": "Page of Swords · Upright",
+    "content": "【宝剑侍从 · 正位】好奇，紧盯她们的言语。（Page of Swords · Upright: curiosity, watching their words closely） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 11,
+      "suit": "swords",
+      "element": "air",
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "page-of-swords__reversed",
+    "title_zh": "宝剑侍从 · 逆位",
+    "title_en": "Page of Swords · Reversed",
+    "content": "【宝剑侍从 · 逆位】流言蜚语，监视，锐利言语的飞掷。（Page of Swords · Reversed: gossip, surveillance, sharp words flung） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 11,
+      "suit": "swords",
+      "element": "air",
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "knight-of-swords__upright",
+    "title_zh": "宝剑骑士 · 正位",
+    "title_en": "Knight of Swords · Upright",
+    "content": "【宝剑骑士 · 正位】直接迅速的靠近，激烈的表白。（Knight of Swords · Upright: a fast direct approach, intense declarations） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 12,
+      "suit": "swords",
+      "element": "air",
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "knight-of-swords__reversed",
+    "title_zh": "宝剑骑士 · 逆位",
+    "title_en": "Knight of Swords · Reversed",
+    "content": "【宝剑骑士 · 逆位】伤人的话语，表达中的混乱。（Knight of Swords · Reversed: words that cut, chaos in the delivery） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 12,
+      "suit": "swords",
+      "element": "air",
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "queen-of-swords__upright",
+    "title_zh": "宝剑皇后 · 正位",
+    "title_en": "Queen of Swords · Upright",
+    "content": "【宝剑皇后 · 正位】清晰的界限，诚实胜过舒适。（Queen of Swords · Upright: clear boundaries, honesty over comfort） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 13,
+      "suit": "swords",
+      "element": "air",
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "queen-of-swords__reversed",
+    "title_zh": "宝剑皇后 · 逆位",
+    "title_en": "Queen of Swords · Reversed",
+    "content": "【宝剑皇后 · 逆位】苦涩，曾经的温暖变得冰冷。（Queen of Swords · Reversed: bitterness, ice where warmth was） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 13,
+      "suit": "swords",
+      "element": "air",
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "king-of-swords__upright",
+    "title_zh": "宝剑国王 · 正位",
+    "title_en": "King of Swords · Upright",
+    "content": "【宝剑国王 · 正位】理性的判断，真相胜过戏剧。（King of Swords · Upright: rational judgment, truth over drama） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 14,
+      "suit": "swords",
+      "element": "air",
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "king-of-swords__reversed",
+    "title_zh": "宝剑国王 · 逆位",
+    "title_en": "King of Swords · Reversed",
+    "content": "【宝剑国王 · 逆位】冷漠，将智慧武器化。（King of Swords · Reversed: coldness, intellect weaponized） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 14,
+      "suit": "swords",
+      "element": "air",
+      "decan": null,
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ace-of-pentacles__upright",
+    "title_zh": "星币王牌 · 正位",
+    "title_en": "Ace of Pentacles · Upright",
+    "content": "【星币王牌 · 正位】一个坚实的新开始，触手可及的潜力。（Ace of Pentacles · Upright: a solid new beginning, real-world potential） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 1,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ace-of-pentacles__reversed",
+    "title_zh": "星币王牌 · 逆位",
+    "title_en": "Ace of Pentacles · Reversed",
+    "content": "【星币王牌 · 逆位】一个摇摆不定的开端，机会溜走。（Ace of Pentacles · Reversed: a shaky start, opportunity slipping） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 1,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "two-of-pentacles__upright",
+    "title_zh": "星币二 · 正位",
+    "title_en": "Two of Pentacles · Upright",
+    "content": "【星币二 · 正位】爱情与生活的平衡，灵活适应。（Two of Pentacles · Upright: juggling love with life, adaptable balance） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 2,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "capricorn",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "two-of-pentacles__reversed",
+    "title_zh": "星币二 · 逆位",
+    "title_en": "Two of Pentacles · Reversed",
+    "content": "【星币二 · 逆位】手忙脚乱，优先事项冲突。（Two of Pentacles · Reversed: dropped balls, priorities colliding） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 2,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "capricorn",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "three-of-pentacles__upright",
+    "title_zh": "星币三 · 正位",
+    "title_en": "Three of Pentacles · Upright",
+    "content": "【星币三 · 正位】共同建设，爱情中的团队合作。（Three of Pentacles · Upright: building together, teamwork in love） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 3,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "capricorn",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "three-of-pentacles__reversed",
+    "title_zh": "星币三 · 逆位",
+    "title_en": "Three of Pentacles · Reversed",
+    "content": "【星币三 · 逆位】在两人项目中独自努力。（Three of Pentacles · Reversed: working alone on a two-person project） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 3,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "capricorn",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "four-of-pentacles__upright",
+    "title_zh": "星币四 · 正位",
+    "title_en": "Four of Pentacles · Upright",
+    "content": "【星币四 · 正位】紧紧抓住，看重安全感甚于风险。（Four of Pentacles · Upright: holding on tight, security valued over risk） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 4,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "capricorn",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "four-of-pentacles__reversed",
+    "title_zh": "星币四 · 逆位",
+    "title_en": "Four of Pentacles · Reversed",
+    "content": "【星币四 · 逆位】放松掌控，让爱呼吸。（Four of Pentacles · Reversed: loosening the grip, letting love breathe） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 4,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "capricorn",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "five-of-pentacles__upright",
+    "title_zh": "星币五 · 正位",
+    "title_en": "Five of Pentacles · Upright",
+    "content": "【星币五 · 正位】感觉被冷落，艰难时期。（Five of Pentacles · Upright: feeling left out in the cold, lean times） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 5,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "taurus",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "five-of-pentacles__reversed",
+    "title_zh": "星币五 · 逆位",
+    "title_en": "Five of Pentacles · Reversed",
+    "content": "【星币五 · 逆位】复苏，经历困境后温暖回归。（Five of Pentacles · Reversed: recovery, warmth returning after hardship） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 5,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "taurus",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "six-of-pentacles__upright",
+    "title_zh": "星币六 · 正位",
+    "title_en": "Six of Pentacles · Upright",
+    "content": "【星币六 · 正位】慷慨，公平地给予和接受。（Six of Pentacles · Upright: generosity, giving and receiving fairly） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 6,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "taurus",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "six-of-pentacles__reversed",
+    "title_zh": "星币六 · 逆位",
+    "title_en": "Six of Pentacles · Reversed",
+    "content": "【星币六 · 逆位】附加条件，不平衡的付出。（Six of Pentacles · Reversed: strings attached, a lopsided ledger） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 6,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "taurus",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "seven-of-pentacles__upright",
+    "title_zh": "星币七 · 正位",
+    "title_en": "Seven of Pentacles · Upright",
+    "content": "【星币七 · 正位】耐心，等待爱的成长。（Seven of Pentacles · Upright: patience, waiting to see what grows） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 7,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "taurus",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "seven-of-pentacles__reversed",
+    "title_zh": "星币七 · 逆位",
+    "title_en": "Seven of Pentacles · Reversed",
+    "content": "【星币七 · 逆位】付出没有回报，是时候重新评估了。（Seven of Pentacles · Reversed: effort without return, time to reassess） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 7,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "taurus",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "eight-of-pentacles__upright",
+    "title_zh": "星币八 · 正位",
+    "title_en": "Eight of Pentacles · Upright",
+    "content": "【星币八 · 正位】用心经营这段关系。（Eight of Pentacles · Upright: working on the relationship with care） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 8,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "virgo",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "eight-of-pentacles__reversed",
+    "title_zh": "星币八 · 逆位",
+    "title_en": "Eight of Pentacles · Reversed",
+    "content": "【星币八 · 逆位】敷衍了事，努力用错了地方。（Eight of Pentacles · Reversed: going through the motions, effort misplaced） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 8,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "virgo",
+        "from": 0,
+        "to": 10
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "nine-of-pentacles__upright",
+    "title_zh": "星币九 · 正位",
+    "title_en": "Nine of Pentacles · Upright",
+    "content": "【星币九 · 正位】自我价值，独自一人也活得精彩。（Nine of Pentacles · Upright: self-worth, thriving whole on your own） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 9,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "virgo",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "nine-of-pentacles__reversed",
+    "title_zh": "星币九 · 逆位",
+    "title_en": "Nine of Pentacles · Reversed",
+    "content": "【星币九 · 逆位】向外寻求认同。（Nine of Pentacles · Reversed: seeking validation outside yourself） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 9,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "virgo",
+        "from": 10,
+        "to": 20
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ten-of-pentacles__upright",
+    "title_zh": "星币十 · 正位",
+    "title_en": "Ten of Pentacles · Upright",
+    "content": "【星币十 · 正位】长期的安全感，家庭，传承的爱。（Ten of Pentacles · Upright: long-term security, family, a legacy love） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 10,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "virgo",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "ten-of-pentacles__reversed",
+    "title_zh": "星币十 · 逆位",
+    "title_en": "Ten of Pentacles · Reversed",
+    "content": "【星币十 · 逆位】根基不稳，家庭摩擦。（Ten of Pentacles · Reversed: instability at the foundation, family friction） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 10,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": {
+        "sign": "virgo",
+        "from": 20,
+        "to": 30
+      },
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "page-of-pentacles__upright",
+    "title_zh": "星币侍从 · 正位",
+    "title_en": "Page of Pentacles · Upright",
+    "content": "【星币侍从 · 正位】一份实际的新提议，稳定的兴趣。（Page of Pentacles · Upright: a practical new offer, steady interest） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 11,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "page-of-pentacles__reversed",
+    "title_zh": "星币侍从 · 逆位",
+    "title_en": "Page of Pentacles · Reversed",
+    "content": "【星币侍从 · 逆位】拖延，有兴趣却不投入。（Page of Pentacles · Reversed: procrastination, interest without investment） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 11,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "knight-of-pentacles__upright",
+    "title_zh": "星币骑士 · 正位",
+    "title_en": "Knight of Pentacles · Upright",
+    "content": "【星币骑士 · 正位】缓慢、忠诚、可靠的爱慕。（Knight of Pentacles · Upright: slow, loyal, dependable devotion） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 12,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "knight-of-pentacles__reversed",
+    "title_zh": "星币骑士 · 逆位",
+    "title_en": "Knight of Pentacles · Reversed",
+    "content": "【星币骑士 · 逆位】停滞不前，错把无聊当安全。（Knight of Pentacles · Reversed: stagnation, boredom mistaken for safety） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 12,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "queen-of-pentacles__upright",
+    "title_zh": "星币皇后 · 正位",
+    "title_en": "Queen of Pentacles · Upright",
+    "content": "【星币皇后 · 正位】踏实的关怀，你可以依靠的温暖。（Queen of Pentacles · Upright: grounded care, warmth you can rest in） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 13,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "queen-of-pentacles__reversed",
+    "title_zh": "星币皇后 · 逆位",
+    "title_en": "Queen of Pentacles · Reversed",
+    "content": "【星币皇后 · 逆位】除了你，关心所有人带来的倦怠。（Queen of Pentacles · Reversed: burnout from caring for everyone but you） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 13,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "king-of-pentacles__upright",
+    "title_zh": "星币国王 · 正位",
+    "title_en": "King of Pentacles · Upright",
+    "content": "【星币国王 · 正位】一个提供者，稳定且投入的富足。（King of Pentacles · Upright: a provider, stable committed abundance） Yes/No 极性：yes。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 14,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "upright",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  },
+  {
+    "domain": "tarot",
+    "doc_key": "king-of-pentacles__reversed",
+    "title_zh": "星币国王 · 逆位",
+    "title_en": "King of Pentacles · Reversed",
+    "content": "【星币国王 · 逆位】占有欲，价值用物质衡量。（King of Pentacles · Reversed: possessiveness, worth measured in things） Yes/No 极性：no。",
+    "keywords": [],
+    "meta": {
+      "arcana": "minor",
+      "number": 14,
+      "suit": "pentacles",
+      "element": "earth",
+      "decan": null,
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      }
+    },
+    "orientation": "reversed",
+    "language": "zh",
+    "source": "Love Oracle Open Dataset",
+    "license": "CC BY 4.0",
+    "embedding_id": null,
+    "is_active": true
+  }
+]

@@ -28,6 +28,8 @@ evaluation/reports/
 .pytest_cache/
 .mypy_cache/
 backend/dev.db
+dev.db
+*.db
 
 # Jupyter
 .ipynb_checkpoints/

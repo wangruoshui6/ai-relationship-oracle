@@ -4,6 +4,7 @@ from app.models.conversation_message import ConversationMessage
 from app.models.evaluation_case import EvaluationCase
 from app.models.evaluation_result import EvaluationResult
 from app.models.evaluation_run import EvaluationRun
+from app.models.knowledge_document import KnowledgeDocument
 from app.models.memory_summary import MemorySummary
 from app.models.partner_profile import PartnerProfile
 from app.models.relationship_event import RelationshipEvent
@@ -18,4 +19,5 @@ __all__ = (
     "ConversationMessage", "RelationshipProfile", "MemorySummary",
     "RelationshipEvent", "RelationshipEventCandidate", "Report",
     "EvaluationCase", "EvaluationRun", "EvaluationResult",
+    "KnowledgeDocument",
 )
