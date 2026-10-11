@@ -2,6 +2,7 @@
 import json, random
 from app.tools.base import BaseTool
 from app.tools.result_schema import ToolResult
+from app.rag.retriever import KnowledgeRetriever
 from app.services.llm_provider_service import LLMProviderService
 from app.services.prompt_center_service import get_prompt_center
 
@@ -41,6 +42,7 @@ class TarotEngineService(BaseTool):
     def __init__(self) -> None:
         self.prompt_center = get_prompt_center()
         self.llm = LLMProviderService()
+        self.retriever = KnowledgeRetriever()
 
     def analyze(self, data: dict) -> ToolResult:
         user_message = data.get("user_message", "")
@@ -48,11 +50,21 @@ class TarotEngineService(BaseTool):
         reversed_ = random.random() < 0.3
         orientation = "reversed" if reversed_ else "upright"
 
+        # RAG: 从知识库检索该牌对应方向的解读作为依据（不调用 LLM）
+        kb_docs = self.retriever.retrieve_tarot_card(card[1], orientation)
+        rag_context = self.retriever.build_rag_context(kb_docs)
+        grounding = (
+            f"\n\nReference knowledge base entry (use as grounding, do not invent card meanings):\n{rag_context}"
+            if rag_context
+            else ""
+        )
+
         prompt = (
             f'The querent asks: "{user_message}"\n\n'
             f"Card drawn: {card[1]} (Arcana {card[0]}) - {orientation}\n"
-            f"Traditional keywords: {card[2]}\n\n"
+            f"Traditional keywords: {card[2]}\n"
             f"Interpret this card in the context of the querent's relationship question. The card is {orientation}."
+            f"{grounding}"
         )
 
         try:
@@ -73,12 +85,13 @@ class TarotEngineService(BaseTool):
                 confidence_notes=f"Tarot provides symbolic guidance, not predictions. Card meaning: {parsed.get('card_meaning', '')}",
             )
         except Exception:
+            fallback_meaning = rag_context or card[2]
             return ToolResult(
                 tool=self.tool_name, status="degraded",
                 core_signals=[f"card: {card[1]} ({orientation})"],
                 risks=[], opportunities=[],
                 actions=["Reflect on what this card means to you personally"],
-                confidence_notes=f"Tarot interpretation unavailable. Traditional meaning: {card[2]}.",
+                confidence_notes=f"Tarot provides symbolic guidance, not predictions. {fallback_meaning}",
             )
 
     def _draw_card(self) -> tuple[str, str, str]:

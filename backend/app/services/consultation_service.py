@@ -5,6 +5,7 @@ from app.db.repositories.partner_repo import PartnerProfileRepo
 from app.db.repositories.profile_repo import UserProfileRepo
 from app.db.repositories.relationship_event_repo import RelationshipEventRepo
 from app.db.repositories.relationship_repo import RelationshipRepo
+from app.rag.retriever import KnowledgeRetriever
 from app.schemas.consultation import ConsultationRequest
 from app.services.compatibility_engine_service import CompatibilityEngineService
 from app.services.conversation_persistence_service import ConversationPersistenceService
@@ -109,7 +110,11 @@ class ConsultationService:
             )
             structured_result.tool_results.append(compatibility_result)
 
-            system_prompt = self.prompt_builder.build_system_prompt(memory_context, structured_result)
+            system_prompt = self.prompt_builder.build_system_prompt(
+                memory_context,
+                structured_result,
+                rag_context=self._build_rag_context(structured_result),
+            )
             user_prompt = self.prompt_builder.build_consultation_prompt(
                 user_message=payload.message,
                 analysis_methods=payload.analysis_methods,
@@ -174,6 +179,35 @@ class ConsultationService:
         summary = self.rel_repo.get_memory_summary(user_id, partner_id)
         events = self.event_repo.list_by_user_partner(user_id, partner_id)
         return {"profile": profile, "summary": summary, "recent_events": events[:5]}
+
+    def _build_rag_context(self, structured_result) -> str | None:
+        """从塔罗分析结果提取牌名与方向，检索知识库生成 rag_context。
+
+        核心信号格式：'card: The Lovers (upright)'。检索不到时返回 None（不阻断流程）。
+        """
+        if not structured_result:
+            return None
+        tarot_tr = next(
+            (tr for tr in structured_result.tool_results if tr.tool == "tarot"),
+            None,
+        )
+        if not tarot_tr or not tarot_tr.core_signals:
+            return None
+        signal = tarot_tr.core_signals[0]
+        if not signal.startswith("card:"):
+            return None
+        body = signal[len("card:"):].strip()
+        if "(" in body:
+            card_name, orientation = body.rsplit("(", 1)
+            orientation = orientation.rstrip(")").strip()
+        else:
+            card_name, orientation = body, None
+        retriever = KnowledgeRetriever()
+        try:
+            docs = retriever.retrieve_tarot_card(card_name.strip(), orientation)
+            return retriever.build_rag_context(docs) or None
+        finally:
+            retriever.close()
 
     @staticmethod
     def _build_title(message: str) -> str:

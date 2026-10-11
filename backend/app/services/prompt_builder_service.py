@@ -24,8 +24,15 @@ class PromptBuilderService:
         self,
         memory_context: dict | None = None,
         structured_result: StructuredResult | None = None,
+        rag_context: str | None = None,
     ) -> str:
         parts = [SYSTEM_BASE]
+
+        # RAG: knowledge grounding (e.g. tarot card meanings from knowledge base)
+        if rag_context:
+            parts.append("\n--- RAG Knowledge Context ---")
+            parts.append(rag_context)
+            parts.append("--- End RAG Context ---")
 
         # Week 6: tool analysis results
         if structured_result and structured_result.tool_results:
