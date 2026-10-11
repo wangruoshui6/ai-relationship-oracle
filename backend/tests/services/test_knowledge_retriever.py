@@ -80,3 +80,63 @@ class TestConsultationRAGContext:
         sr = StructuredResult(tool_results=[ToolResult(tool="bazi", status="ok")])
         cs = ConsultationService.__new__(ConsultationService)
         assert cs._build_rag_context(sr) is None
+
+    def test_build_rag_context_includes_bazi(self):
+        from app.services.consultation_service import ConsultationService
+
+        tr = ToolResult(
+            tool="bazi", status="ok",
+            core_signals=["day master: 甲(木)", "zodiac: rat", "dominant element: 火 (3 of 8)"],
+        )
+        sr = StructuredResult(tool_results=[tr])
+        cs = ConsultationService.__new__(ConsultationService)
+        ctx = cs._build_rag_context(sr)
+        assert ctx is not None
+        assert "Bazi Grounding" in ctx
+
+    def test_build_rag_context_includes_psychology(self):
+        from app.services.consultation_service import ConsultationService
+
+        tr = ToolResult(
+            tool="psychology", status="ok",
+            core_signals=["anxious attachment visible"],
+            confidence_notes="Attachment style: anxious. Communication: demand-withdraw.",
+        )
+        sr = StructuredResult(tool_results=[tr])
+        cs = ConsultationService.__new__(ConsultationService)
+        ctx = cs._build_rag_context(sr)
+        assert ctx is not None
+        assert "Psychology Grounding" in ctx
+
+    def test_build_rag_context_all_domains(self):
+        from app.services.consultation_service import ConsultationService
+
+        sr = StructuredResult(tool_results=[
+            ToolResult(tool="tarot", status="ok", core_signals=["card: The Lovers (upright)"]),
+            ToolResult(tool="bazi", status="ok", core_signals=["zodiac: rat", "strong earth: stable"]),
+            ToolResult(
+                tool="psychology", status="ok",
+                core_signals=["secure attachment"],
+                confidence_notes="Attachment style: secure. Communication: n/a.",
+            ),
+        ])
+        cs = ConsultationService.__new__(ConsultationService)
+        ctx = cs._build_rag_context(sr)
+        assert ctx
+        for mark in ("Tarot Grounding", "Bazi Grounding", "Psychology Grounding"):
+            assert mark in ctx
+
+    def test_bazi_degraded_still_falls_back_to_knowledge(self):
+        from app.services.consultation_service import ConsultationService
+
+        tr = ToolResult(
+            tool="bazi", status="degraded",
+            core_signals=["insufficient birth data"],
+            confidence_notes="Cannot compute Bazi chart without birth date.",
+        )
+        sr = StructuredResult(tool_results=[tr])
+        cs = ConsultationService.__new__(ConsultationService)
+        # 引擎降级时仍用"合婚"兜底检索，保证 LLM 有参考依据
+        ctx = cs._build_rag_context(sr)
+        assert ctx is not None
+        assert "Bazi Grounding" in ctx

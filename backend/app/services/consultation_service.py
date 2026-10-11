@@ -180,34 +180,106 @@ class ConsultationService:
         events = self.event_repo.list_by_user_partner(user_id, partner_id)
         return {"profile": profile, "summary": summary, "recent_events": events[:5]}
 
-    def _build_rag_context(self, structured_result) -> str | None:
-        """从塔罗分析结果提取牌名与方向，检索知识库生成 rag_context。
+    # 领域信号 → 知识库检索词 映射（按优先级命中）
+    _BAZI_TOPICS = [
+        (("五行", "element", "火", "水", "木", "金", "土"), "五行"),
+        (("生肖", "zodiac"), "生肖"),
+        (("日主", "day master"), "日主"),
+        (("六合",), "六合"),
+        (("六冲", "冲", "clash"), "六冲"),
+        (("十神",), "十神"),
+        (("天干",), "天干"),
+        (("地支",), "地支"),
+        (("阴阳",), "阴阳"),
+    ]
+    _BAZI_FALLBACK = "合婚"
 
-        核心信号格式：'card: The Lovers (upright)'。检索不到时返回 None（不阻断流程）。
+    _PSY_TOPICS = [
+        (("依恋", "attachment"), "依恋"),
+        (("爱的五种语言", "爱语", "love language"), "爱的五种语言"),
+        (("冲突", "conflict"), "冲突"),
+        (("情绪", "emotion"), "情绪"),
+        (("自我", "self"), "自我"),
+        (("沟通", "communicat", "倾听", "listen"), "沟通"),
+    ]
+    _PSY_FALLBACK = "沟通"
+
+    def _build_rag_context(self, structured_result) -> str | None:
+        """从各领域分析结果检索知识库，生成 rag_context（tarot/bazi/psychology）。
+
+        塔罗：从 core_signals 的 'card: X (orientation)' 精确检索；
+        八字/心理学：从信号文本提取主题词 → 关键词检索（无命中用兜底词）。
+        检索不到返回 None（不阻断流程）。
         """
         if not structured_result:
             return None
-        tarot_tr = next(
-            (tr for tr in structured_result.tool_results if tr.tool == "tarot"),
-            None,
-        )
-        if not tarot_tr or not tarot_tr.core_signals:
-            return None
-        signal = tarot_tr.core_signals[0]
-        if not signal.startswith("card:"):
-            return None
+        retriever = KnowledgeRetriever()
+        try:
+            sections = []
+            for tr in structured_result.tool_results:
+                text = self._tool_text(tr)
+                if tr.tool == "tarot":
+                    docs = self._retrieve_tarot(retriever, tr)
+                    label = "Tarot Grounding"
+                elif tr.tool == "bazi" and text:
+                    docs = self._retrieve_by_topics(
+                        retriever, "bazi", text, self._BAZI_TOPICS, self._BAZI_FALLBACK
+                    )
+                    label = "Bazi Grounding"
+                elif tr.tool == "psychology" and text:
+                    docs = self._retrieve_by_topics(
+                        retriever, "psychology", text, self._PSY_TOPICS, self._PSY_FALLBACK
+                    )
+                    label = "Psychology Grounding"
+                else:
+                    continue
+                if docs:
+                    sections.append(f"--- {label} ---\n{retriever.build_rag_context(docs)}")
+            return "\n\n".join(sections) if sections else None
+        finally:
+            retriever.close()
+
+    @staticmethod
+    def _tool_text(tr) -> str:
+        """拼接工具输出的全部文本，用于主题词匹配。"""
+        return " ".join(
+            part for part in (
+                " ".join(tr.core_signals or []),
+                " ".join(tr.risks or []),
+                " ".join(tr.opportunities or []),
+                " ".join(tr.actions or []),
+                tr.confidence_notes or "",
+            ) if part
+        ).lower()
+
+    @staticmethod
+    def _retrieve_tarot(retriever, tr) -> list:
+        """塔罗：从 'card: X (orientation)' 信号精确检索。"""
+        signal = next((s for s in tr.core_signals if s.startswith("card:")), None)
+        if not signal:
+            return []
         body = signal[len("card:"):].strip()
         if "(" in body:
             card_name, orientation = body.rsplit("(", 1)
             orientation = orientation.rstrip(")").strip()
         else:
             card_name, orientation = body, None
-        retriever = KnowledgeRetriever()
-        try:
-            docs = retriever.retrieve_tarot_card(card_name.strip(), orientation)
-            return retriever.build_rag_context(docs) or None
-        finally:
-            retriever.close()
+        return retriever.retrieve_tarot_card(card_name.strip(), orientation)
+
+    def _retrieve_by_topics(self, retriever, domain, text, topics, fallback) -> list:
+        """八字/心理学：按命中的主题词逐个检索，合并去重。"""
+        hits = [kw for keywords, kw in topics if any(k in text for k in keywords)]
+        if not hits:
+            hits = [fallback]
+        docs, seen = [], set()
+        for kw in hits:
+            for doc in retriever.search(domain, kw, limit=2):
+                if doc.doc_key not in seen:
+                    seen.add(doc.doc_key)
+                    docs.append(doc)
+            if len(docs) >= 5:
+                break
+        return docs
 
     @staticmethod
     def _build_title(message: str) -> str:
